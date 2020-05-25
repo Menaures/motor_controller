@@ -1,0 +1,7069 @@
+Model {
+  Name			  "motorsteuerung"
+  Version		  8.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.282"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1296.0, 776.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"511"
+	Extents			[1246.0, 602.0]
+	ZoomFactor		[0.82873730043541372]
+	Offset			[-414.24605954465852, 58.106830122591944]
+      }
+    }
+  }
+  Created		  "Tue Feb 18 15:25:00 2003"
+  Creator		  "mf"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Stefan Disch"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 06 10:34:47 2015"
+  RTWModifiedTimeStamp	  352809287
+  ModifiedHistory	  "Original Modell stammt von Martin Fränzle, Universität Oldenburg.\nErweiterung durch Stefan Disch"
+  ", Universität Freiburg"
+  ModelVersionFormat	  "1.%<AutoIncrement:282>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  on
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "motorsteuerung"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "motorsteuerung"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "100"
+	  AbsTol		  "auto"
+	  FixedStep		  "5e-6"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-4"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode5"
+	  SolverName		  "ode5"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  off
+	  DSMLogging		  off
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  BlockReduction	  on
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "On"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "None"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.13.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		1
+		Cell			"GenerateAllocFcn"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 198, 74, 1083, 683 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    18
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ComplexToMagnitudeAngle
+      Output		      "Magnitude and angle"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      InitialCondition
+      Value		      "1"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      MagnitudeAngleToComplex
+      Input		      "Magnitude and angle"
+      ConstantPart	      "0"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      ScaleReciprocalGainFactor	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      CurrentSetting	      "1"
+      varsize		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      MinMax
+      Function		      "min"
+      Inputs		      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Signum
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Stop
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      UnitDelay
+      InitialCondition	      "0"
+      InputProcessing	      "Inherited"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+      HasFrameUpgradeWarning  on
+    }
+  }
+  System {
+    Name		    "motorsteuerung"
+    Location		    [-8, -8, 1288, 768]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "tiled"
+    PaperType		    "a4letter"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "524"
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "10 mus\nclock"
+      SID		      "1"
+      Ports		      [0, 1]
+      Position		      [747, 460, 793, 490]
+      ZOrder		      -1
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      PulseType		      "Time based"
+      Period		      "1e-5"
+      PulseWidth	      "50"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Calculated Advance"
+      SID		      "64"
+      Ports		      [1]
+      Position		      [410, 370, 500, 400]
+      ZOrder		      -1
+      BlockMirror	      on
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "377"
+      Position		      [20, 845, 50, 875]
+      ZOrder		      -5
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "506"
+      Position		      [380, 915, 410, 945]
+      ZOrder		      3
+      BackgroundColor	      "red"
+      Value		      "25"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Engine"
+      SID		      "511"
+      Ports		      [7, 6]
+      Position		      [715, 576, 880, 924]
+      ZOrder		      10
+      BackgroundColor	      "orange"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Engine"
+	Location		[-8, -8, 1288, 768]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"83"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ignite1"
+	  SID			  "512"
+	  Position		  [230, 285, 260, 300]
+	  ZOrder		  1
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ignite2"
+	  SID			  "513"
+	  Position		  [160, 285, 190, 300]
+	  ZOrder		  2
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ignite3"
+	  SID			  "514"
+	  Position		  [95, 285, 125, 300]
+	  ZOrder		  3
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ignite4"
+	  SID			  "515"
+	  Position		  [20, 285, 50, 300]
+	  ZOrder		  4
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Throttle Angle(degree)"
+	  SID			  "516"
+	  Position		  [75, 503, 105, 517]
+	  ZOrder		  5
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Spark Advance (degree)"
+	  SID			  "517"
+	  Position		  [75, 548, 105, 562]
+	  ZOrder		  6
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Torque Drag"
+	  SID			  "518"
+	  Position		  [75, 593, 105, 607]
+	  ZOrder		  7
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Engine"
+	  SID			  "4"
+	  Ports			  [3, 2]
+	  Position		  [280, 487, 480, 623]
+	  ZOrder		  -6
+	  ForegroundColor	  "orange"
+	  BackgroundColor	  "orange"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Engine"
+	    Location		    [-8, -8, 1288, 768]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    212
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "a4letter"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "83"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Throttle angle (degree)"
+	      SID		      "60"
+	      Position		      [30, 153, 60, 167]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	      OutMin		      "0"
+	      OutMax		      "90"
+	      OutDataTypeStr	      "double"
+	      VarSizeSig	      "No"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Spark Adnvance \n(degree)"
+	      SID		      "458"
+	      Position		      [30, 318, 60, 332]
+	      ZOrder		      -1
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Torque drag"
+	      SID		      "509"
+	      Position		      [30, 378, 60, 392]
+	      ZOrder		      1
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "double"
+	      Port {
+		PortNumber		1
+		Name			"LoadTorque"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Combustion"
+	      SID		      "201"
+	      Ports		      [3, 1]
+	      Position		      [415, 140, 470, 220]
+	      ZOrder		      -3
+	      BackgroundColor	      "[0.537255, 0.792157, 0.419608]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Combustion"
+		Location		[24, 198, 1265, 761]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"a4letter"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"125"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Air Charge"
+		  SID			  "202"
+		  Position		  [45, 25, 65, 45]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "N"
+		  SID			  "203"
+		  Position		  [160, 130, 180, 150]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Spark Advance"
+		  SID			  "373"
+		  Position		  [60, 98, 90, 112]
+		  ZOrder		  -1
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Display
+		  Name			  "Display"
+		  SID			  "388"
+		  Ports			  [1]
+		  Position		  [865, 220, 955, 250]
+		  ZOrder		  -1
+		  Decimation		  "1"
+		  Lockdown		  off
+		}
+		Block {
+		  BlockType		  Display
+		  Name			  "Display1"
+		  SID			  "486"
+		  Ports			  [1]
+		  Position		  [235, 260, 325, 290]
+		  ZOrder		  -1
+		  Decimation		  "1"
+		  Lockdown		  off
+		}
+		Block {
+		  BlockType		  Display
+		  Name			  "Display2"
+		  SID			  "487"
+		  Ports			  [1]
+		  Position		  [235, 220, 325, 250]
+		  ZOrder		  -1
+		  Decimation		  "1"
+		  Lockdown		  off
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "High RPM Corrections"
+		  SID			  "386"
+		  Position		  [280, 173, 695, 207]
+		  ZOrder		  -7
+		  Expr			  "-u[4]^5*100/700^5"
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "Ignition Advance Influence"
+		  SID			  "209"
+		  Position		  [285, 102, 700, 138]
+		  ZOrder		  -8
+		  Expr			  "(30 - ((u[3] - u[4] * 0.0015*180/pi)^4)*0.01)"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "204"
+		  Ports			  [4, 1]
+		  Position		  [225, 17, 230, 158]
+		  ZOrder		  -9
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation"
+		  SID			  "478"
+		  Ports			  [1, 1]
+		  Position		  [740, 105, 770, 135]
+		  ZOrder		  -10
+		  InputPortMap		  "u0"
+		  UpperLimit		  "150"
+		  LowerLimit		  "-150"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Stoichiometric Fuel"
+		  SID			  "206"
+		  Position		  [125, 56, 175, 84]
+		  ZOrder		  -11
+		  Gain			  "1/14.6"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  "207"
+		  Ports			  [3, 1]
+		  Position		  [855, 110, 875, 130]
+		  ZOrder		  -12
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "+++"
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "Torque Gen"
+		  SID			  "208"
+		  Position		  [280, 54, 735, 86]
+		  ZOrder		  -13
+		  Expr			  "-181.3 + 379.36*u[1] + 21.91*u[1]/u[2] - (0.85*u[1]*u[1])/(u[2]^2) +0.027*u[4] - 0.000107*u[4]^2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Torque"
+		  SID			  "210"
+		  Position		  [925, 110, 945, 130]
+		  ZOrder		  -14
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "Torque"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Torque Gen"
+		  SrcPort		  1
+		  Points		  [125, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Torque Gen"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 30]
+		    Branch {
+		    DstBlock		    "Ignition Advance Influence"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 70]
+		    DstBlock		    "High RPM Corrections"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  SrcBlock		  "Air Charge"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    Points		    [0, 35]
+		    DstBlock		    "Stoichiometric Fuel"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [110, 0]
+		    Branch {
+		    DstBlock		    "Mux"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 240]
+		    DstBlock		    "Display1"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  SrcBlock		  "N"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Spark Advance"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Stoichiometric Fuel"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    DstBlock		    "Mux"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 165]
+		    DstBlock		    "Display2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Ignition Advance Influence"
+		  SrcPort		  1
+		  DstBlock		  "Saturation"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "High RPM Corrections"
+		  SrcPort		  1
+		  Points		  [165, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Saturation"
+		  SrcPort		  1
+		  Points		  [60, 0]
+		  Branch {
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 115]
+		    DstBlock		    "Display"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  SID			  "489"
+		  Name			  "Engine Torque"
+		  Position		  [496, 327]
+		  ZOrder		  -1
+		  FontSize		  16
+		  FontWeight		  "bold"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Compare\nTo Constant"
+	      SID		      "484"
+	      Ports		      [1, 1]
+	      Position		      [825, 195, 855, 225]
+	      ZOrder		      -5
+	      LibraryVersion	      "1.274"
+	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	      SourceType	      "Compare To Constant"
+	      relop		      "<="
+	      const		      "500"
+	      OutDataTypeStr	      "boolean"
+	      ZeroCross		      on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Compression"
+	      SID		      "211"
+	      Ports		      [1, 2, 0, 1]
+	      Position		      [290, 136, 345, 229]
+	      ZOrder		      -6
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Compression"
+		Location		[519, 306, 838, 638]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"a4letter"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "mass(k+1)"
+		  SID			  "212"
+		  Position		  [25, 30, 45, 50]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  SID			  "213"
+		  Ports			  [0, 1]
+		  Position		  [145, 100, 165, 120]
+		  ZOrder		  -2
+		  TriggerType		  "either"
+		  ShowOutputPort	  on
+		}
+		Block {
+		  BlockType		  InitialCondition
+		  Name			  "Init"
+		  SID			  "214"
+		  Position		  [75, 20, 115, 60]
+		  ZOrder		  -3
+		  Value			  "0.152"
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  SID			  "215"
+		  Position		  [145, 17, 165, 63]
+		  ZOrder		  -4
+		  InitialCondition	  "0.152"
+		  SampleTime		  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "mass(k)"
+		  SID			  "216"
+		  Position		  [205, 30, 225, 50]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0.152"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "trigger"
+		  SID			  "217"
+		  Position		  [205, 100, 225, 120]
+		  ZOrder		  -6
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "-1"
+		}
+		Line {
+		  SrcBlock		  "Trigger"
+		  SrcPort		  1
+		  DstBlock		  "trigger"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  DstBlock		  "mass(k)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "mass(k+1)"
+		  SrcPort		  1
+		  DstBlock		  "Init"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Init"
+		  SrcPort		  1
+		  DstBlock		  "Unit Delay"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Engine\nDynamics"
+	      SID		      "223"
+	      Ports		      [2, 1]
+	      Position		      [565, 162, 605, 238]
+	      ZOrder		      -8
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Engine\nDynamics"
+		Location		[16, 136, 442, 468]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"a4letter"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Teng"
+		  SID			  "224"
+		  Position		  [40, 25, 60, 45]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Tload"
+		  SID			  "225"
+		  Position		  [40, 85, 60, 105]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Inverse Inertia,\n1/J"
+		  SID			  "226"
+		  Position		  [155, 51, 205, 79]
+		  ZOrder		  -3
+		  Gain			  "1/0.15"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  "227"
+		  Ports			  [2, 1]
+		  Position		  [110, 55, 130, 75]
+		  ZOrder		  -4
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "+-"
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "w = T/J\nw0 = 83.78 rad/s = 800 RPM"
+		  SID			  "228"
+		  Ports			  [1, 1]
+		  Position		  [260, 47, 280, 83]
+		  ZOrder		  -5
+		  InitialCondition	  "83.78"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "N"
+		  SID			  "229"
+		  Position		  [305, 55, 325, 75]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  SrcBlock		  "Tload"
+		  SrcPort		  1
+		  Points		  [55, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Teng"
+		  SrcPort		  1
+		  Points		  [55, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "Inverse Inertia,\n1/J"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "w = T/J\nw0 = 83.78 rad/s = 800 RPM"
+		  SrcPort		  1
+		  DstBlock		  "N"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Inverse Inertia,\n1/J"
+		  SrcPort		  1
+		  DstBlock		  "w = T/J\nw0 = 83.78 rad/s = 800 RPM"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "231"
+	      Ports		      [2, 1]
+	      Position		      [660, 302, 665, 333]
+	      ZOrder		      -9
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Stop
+	      Name		      "Stop Simulation"
+	      SID		      "485"
+	      Position		      [895, 192, 930, 228]
+	      ZOrder		      -4
+	      BackgroundColor	      "red"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Throttle & Manifold1"
+	      SID		      "232"
+	      Ports		      [3, 1]
+	      Position		      [140, 148, 255, 222]
+	      ZOrder		      -11
+	      BackgroundColor	      "[0.294118, 0.592157, 0.772549]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Throttle & Manifold1"
+		Location		[82, 53, 806, 565]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"a4letter"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Throttle Ang."
+		  SID			  "233"
+		  Position		  [30, 50, 50, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Engine Speed, N"
+		  SID			  "234"
+		  Position		  [105, 230, 125, 250]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "trigger"
+		  SID			  "235"
+		  Position		  [465, 230, 485, 250]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "0 <= theta <= 90"
+		  SID			  "236"
+		  Ports			  [1, 1]
+		  Position		  [105, 48, 125, 72]
+		  ZOrder		  -4
+		  NamePlacement		  "alternate"
+		  InputPortMap		  "u0"
+		  UpperLimit		  "90"
+		  LowerLimit		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Atmospheric\nPressure, Pa\n(bar)"
+		  SID			  "237"
+		  Position		  [105, 110, 125, 130]
+		  ZOrder		  -5
+		  Value			  "1.0"
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "Intake"
+		  SID			  "238"
+		  Ports			  [2, 1, 0, 0, 1]
+		  Position		  [515, 188, 555, 257]
+		  ZOrder		  -6
+		  ExternalReset		  "either"
+		  ShowStatePort		  on
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Intake Manifold"
+		  SID			  "239"
+		  Ports			  [2, 2]
+		  Position		  [180, 188, 415, 257]
+		  ZOrder		  -7
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "Intake Manifold"
+		    Location		    [49, 308, 656, 761]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "mdot Input \n(g/s)"
+		    SID			    "240"
+		    Position		    [30, 80, 50, 100]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "N (rad/sec)"
+		    SID			    "241"
+		    Position		    [225, 140, 245, 160]
+		    ZOrder		    -2
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Mux
+		    Name		    "Mux"
+		    SID			    "242"
+		    Ports		    [2, 1]
+		    Position		    [325, 61, 330, 179]
+		    ZOrder		    -3
+		    BackgroundColor	    "black"
+		    ShowName		    off
+		    Inputs		    "2"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    Fcn
+		    Name		    "Pumping"
+		    SID			    "243"
+		    Position		    [375, 109, 440, 131]
+		    ZOrder		    -4
+		    Expr		    "-0.366 + 0.08979*u[1]*u[2] - 0.0337*u[2]*u[1]*u[1] + 0.0001*u[1]*u[2]*u[2]"
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "RT/Vm"
+		    SID			    "244"
+		    Position		    [145, 70, 240, 110]
+		    ZOrder		    -5
+		    Gain		    "0.41328"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum"
+		    SID			    "245"
+		    Ports		    [2, 1]
+		    Position		    [100, 80, 120, 100]
+		    ZOrder		    -6
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "|+-"
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "p0 = 0.543 bar"
+		    SID			    "246"
+		    Ports		    [1, 1]
+		    Position		    [260, 61, 290, 119]
+		    ZOrder		    -7
+		    InitialCondition	    ".543"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "mdot to \nCylinder\n (g/s)"
+		    SID			    "247"
+		    Position		    [500, 110, 520, 130]
+		    ZOrder		    -8
+		    IconDisplay		    "Port number"
+		    InitialOutput	    "0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Manifold Pressure,\nPm (bar)"
+		    SID			    "248"
+		    Position		    [405, 15, 425, 35]
+		    ZOrder		    -9
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    InitialOutput	    "0"
+		    }
+		    Line {
+		    SrcBlock		    "mdot Input \n(g/s)"
+		    SrcPort		    1
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "RT/Vm"
+		    SrcPort		    1
+		    DstBlock		    "p0 = 0.543 bar"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "N (rad/sec)"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Mux"
+		    SrcPort		    1
+		    DstBlock		    "Pumping"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "p0 = 0.543 bar"
+		    SrcPort		    1
+		    Points		    [5, 0]
+		    Branch {
+		    DstBlock		    "Mux"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Manifold Pressure,\nPm (bar)"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    DstBlock		    "RT/Vm"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Pumping"
+		    SrcPort		    1
+		    Points		    [20, 0]
+		    Branch {
+		    Points		    [0, 90; -355, 0]
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "mdot to \nCylinder\n (g/s)"
+		    DstPort		    1
+		    }
+		    }
+		    Annotation {
+		    SID			    "491"
+		    Name		    "Intake Manifold Vacuum"
+		    Position		    [267, 243]
+		    ZOrder		    -1
+		    FontSize		    16
+		    FontWeight		    "bold"
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  "249"
+		  Position		  [590, 218, 605, 232]
+		  ZOrder		  -8
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Throttle"
+		  SID			  "250"
+		  Ports			  [3, 1]
+		  Position		  [180, 48, 485, 132]
+		  ZOrder		  -9
+		  BackgroundColor	  "[0.670588, 0.850980, 0.913725]"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "Throttle"
+		    Location		    [84, 66, 798, 700]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Throttle Angle,\ntheta (deg)"
+		    SID			    "251"
+		    Position		    [70, 45, 90, 65]
+		    ZOrder		    -1
+		    NamePlacement	    "alternate"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Manifold Pressure,\nPm (bar)"
+		    SID			    "252"
+		    Position		    [65, 110, 85, 130]
+		    ZOrder		    -2
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Atmospheric Pressure,\nPa (bar) "
+		    SID			    "253"
+		    Position		    [65, 180, 85, 200]
+		    ZOrder		    -3
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    MinMax
+		    Name		    "MinMax"
+		    SID			    "254"
+		    Ports		    [2, 1]
+		    Position		    [240, 100, 265, 215]
+		    ZOrder		    -4
+		    ShowName		    off
+		    Inputs		    "2"
+		    Port {
+		    PortNumber		    1
+		    Name		    "pratio"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    "255"
+		    Ports		    [3, 1]
+		    Position		    [575, 22, 595, 338]
+		    ZOrder		    -5
+		    ShowName		    off
+		    Inputs		    "3"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product1"
+		    SID			    "256"
+		    Ports		    [2, 1]
+		    Position		    [180, 112, 210, 143]
+		    ZOrder		    -6
+		    ShowName		    off
+		    Inputs		    "*/"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product2"
+		    SID			    "257"
+		    Ports		    [2, 1]
+		    Position		    [180, 167, 210, 198]
+		    ZOrder		    -7
+		    ShowName		    off
+		    Inputs		    "/*"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Sonic Flow "
+		    SID			    "258"
+		    Position		    [345, 190, 365, 210]
+		    ZOrder		    -8
+		    Value		    "1.0"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum"
+		    SID			    "259"
+		    Ports		    [2, 1]
+		    Position		    [150, 275, 170, 295]
+		    ZOrder		    -9
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "+-|"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch"
+		    SID			    "260"
+		    Position		    [420, 148, 445, 212]
+		    ZOrder		    -10
+		    ShowName		    off
+		    Threshold		    "0.5"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch1"
+		    SID			    "385"
+		    Position		    [520, 43, 545, 107]
+		    ZOrder		    -11
+		    ShowName		    off
+		    }
+		    Block {
+		    BlockType		    Fcn
+		    Name		    "f(theta)"
+		    SID			    "261"
+		    Position		    [135, 43, 425, 67]
+		    ZOrder		    -12
+		    NamePlacement	    "alternate"
+		    Expr		    "2.821 - 0.05231*u + 0.10299*u*u - 0.00063*u*u*u"
+		    }
+		    Block {
+		    BlockType		    Signum
+		    Name		    "flow direction"
+		    SID			    "262"
+		    Position		    [300, 269, 335, 301]
+		    ZOrder		    -13
+		    }
+		    Block {
+		    BlockType		    Fcn
+		    Name		    "g(pratio)"
+		    SID			    "263"
+		    Position		    [315, 148, 390, 172]
+		    ZOrder		    -14
+		    NamePlacement	    "alternate"
+		    Expr		    "2*sqrt(u - u*u)"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Throttle \nFlow, mdot\n (g/s)"
+		    SID			    "264"
+		    Position		    [625, 170, 645, 190]
+		    ZOrder		    -15
+		    IconDisplay		    "Port number"
+		    InitialOutput	    "0"
+		    }
+		    Line {
+		    SrcBlock		    "Manifold Pressure,\nPm (bar)"
+		    SrcPort		    1
+		    Points		    [40, 0]
+		    Branch {
+		    Points		    [0, 55]
+		    Branch {
+		    Points		    [0, 110]
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Product2"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Product1"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Product2"
+		    SrcPort		    1
+		    DstBlock		    "MinMax"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Product1"
+		    SrcPort		    1
+		    DstBlock		    "MinMax"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Atmospheric Pressure,\nPa (bar) "
+		    SrcPort		    1
+		    Points		    [70, 0]
+		    Branch {
+		    Points		    [0, 0]
+		    Branch {
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Product2"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Product1"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "g(pratio)"
+		    SrcPort		    1
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Sonic Flow "
+		    SrcPort		    1
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Switch"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "flow direction"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    DstBlock		    "flow direction"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "pratio"
+		    Labels		    [1, 0]
+		    SrcBlock		    "MinMax"
+		    SrcPort		    1
+		    Points		    [20, 0]
+		    Branch {
+		    Points		    [0, 20]
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "g(pratio)"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Throttle Angle,\ntheta (deg)"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    Branch {
+		    DstBlock		    "f(theta)"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 20; 370, 0]
+		    Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 20]
+		    DstBlock		    "Switch1"
+		    DstPort		    3
+		    }
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "Throttle \nFlow, mdot\n (g/s)"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Switch1"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "f(theta)"
+		    SrcPort		    1
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    SID			    "492"
+		    Name		    "Throttle Flow vs. Valve Angle and Pressure"
+		    Position		    [291, 372]
+		    ZOrder		    -1
+		    FontSize		    16
+		    FontWeight		    "bold"
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "mass(k+1)"
+		  SID			  "265"
+		  Position		  [590, 160, 610, 180]
+		  ZOrder		  -10
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  SrcBlock		  "0 <= theta <= 90"
+		  SrcPort		  1
+		  DstBlock		  "Throttle"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Throttle Ang."
+		  SrcPort		  1
+		  DstBlock		  "0 <= theta <= 90"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Throttle"
+		  SrcPort		  1
+		  Points		  [20, 0; 0, 65; -345, 0]
+		  DstBlock		  "Intake Manifold"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Engine Speed, N"
+		  SrcPort		  1
+		  DstBlock		  "Intake Manifold"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Intake Manifold"
+		  SrcPort		  2
+		  Points		  [20, 0; 0, 45; -375, 0; 0, -195]
+		  DstBlock		  "Throttle"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Intake Manifold"
+		  SrcPort		  1
+		  DstBlock		  "Intake"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Atmospheric\nPressure, Pa\n(bar)"
+		  SrcPort		  1
+		  DstBlock		  "Throttle"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Intake"
+		  SrcPort		  state
+		  Points		  [0, -13]
+		  DstBlock		  "mass(k+1)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "trigger"
+		  SrcPort		  1
+		  DstBlock		  "Intake"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Intake"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "493"
+		  Name			  "Throttle & Manifold Subsystem"
+		  Position		  [327, 23]
+		  ZOrder		  -1
+		  FontSize		  16
+		  FontWeight		  "bold"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "rad/s\nto rpm"
+	      SID		      "370"
+	      Position		      [700, 77, 750, 113]
+	      ZOrder		      -12
+	      Gain		      "30/pi"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "valve timing"
+	      SID		      "269"
+	      Ports		      [1, 1]
+	      Position		      [410, 79, 475, 111]
+	      ZOrder		      -13
+	      BlockMirror	      on
+	      ForegroundColor	      "red"
+	      BackgroundColor	      "[0.537255, 0.792157, 0.419608]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"valve timing"
+		Location		[232, 52, 706, 477]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "N"
+		  SID			  "270"
+		  Position		  [390, 50, 410, 70]
+		  ZOrder		  -1
+		  BlockMirror		  on
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    Name		    "rad/sec"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "TDC and BDC detection"
+		  SID			  "271"
+		  Ports			  [1, 1]
+		  Position		  [225, 37, 290, 83]
+		  ZOrder		  -2
+		  BlockMirror		  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "TDC and BDC detection"
+		    Location		    [76, 52, 525, 443]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "N"
+		    SID			    "272"
+		    Position		    [55, 88, 85, 102]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    "273"
+		    Position		    [50, 140, 80, 160]
+		    ZOrder		    -2
+		    ShowName		    off
+		    Value		    "pi"
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "Get Crank\nAngle\nIC 0"
+		    SID			    "274"
+		    Ports		    [2, 1, 0, 0, 1]
+		    Position		    [215, 81, 250, 139]
+		    ZOrder		    -3
+		    NamePlacement	    "alternate"
+		    ExternalReset	    "rising"
+		    ShowStatePort	    on
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    SID			    "275"
+		    Ports		    [2, 1]
+		    Position		    [115, 113, 145, 162]
+		    ZOrder		    -4
+		    ShowName		    off
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    "Terminator"
+		    SID			    "276"
+		    Position		    [300, 100, 320, 120]
+		    ZOrder		    -5
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "trigger"
+		    SID			    "277"
+		    Position		    [170, 133, 200, 147]
+		    ZOrder		    -6
+		    IconDisplay		    "Port number"
+		    InitialOutput	    "0"
+		    }
+		    Line {
+		    SrcBlock		    "N"
+		    SrcPort		    1
+		    DstBlock		    "Get Crank\nAngle\nIC 0"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    Points		    [5, 0; 0, 0]
+		    Branch {
+		    DstBlock		    "trigger"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -15]
+		    DstBlock		    "Get Crank\nAngle\nIC 0"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Get Crank\nAngle\nIC 0"
+		    SrcPort		    state
+		    Points		    [0, 31; -190, 0; 0, -50]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Get Crank\nAngle\nIC 0"
+		    SrcPort		    1
+		    DstBlock		    "Terminator"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    SID			    "494"
+		    Name		    "Look for next top dead center.and\nbottom dead center.\nProduce two pulses per revolution."
+		    Position		    [38, 50]
+		    HorizontalAlignment	    "left"
+		    ZOrder		    -1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "positive edge to\ndual edge conversion"
+		  SID			  "278"
+		  Ports			  [0, 1, 0, 1]
+		  Position		  [120, 93, 175, 137]
+		  ZOrder		  -3
+		  BlockMirror		  on
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "positive edge to\ndual edge conversion"
+		    Location		    [703, 198, 965, 610]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    TriggerPort
+		    Name		    "Trigger"
+		    SID			    "279"
+		    Ports		    []
+		    Position		    [105, 150, 125, 170]
+		    ZOrder		    -1
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "Gain"
+		    SID			    "280"
+		    Position		    [70, 85, 100, 115]
+		    ZOrder		    -2
+		    BlockMirror		    on
+		    Gain		    "-1"
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay"
+		    SID			    "281"
+		    Position		    [80, 25, 110, 55]
+		    ZOrder		    -3
+		    InitialCondition	    "1"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "trigger"
+		    SID			    "282"
+		    Position		    [155, 34, 180, 46]
+		    ZOrder		    -4
+		    IconDisplay		    "Port number"
+		    InitialOutput	    "-1"
+		    }
+		    Line {
+		    SrcBlock		    "Unit Delay"
+		    SrcPort		    1
+		    Points		    [10, 0]
+		    Branch {
+		    Points		    [0, 60]
+		    DstBlock		    "Gain"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "trigger"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Gain"
+		    SrcPort		    1
+		    Points		    [-15, 0; 0, -60]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "edge180"
+		  SID			  "283"
+		  Position		  [45, 105, 65, 125]
+		  ZOrder		  -4
+		  BlockMirror		  on
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "-1"
+		}
+		Line {
+		  Name			  "rad/sec"
+		  Labels		  [1, 0]
+		  SrcBlock		  "N"
+		  SrcPort		  1
+		  DstBlock		  "TDC and BDC detection"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "positive edge to\ndual edge conversion"
+		  SrcPort		  1
+		  DstBlock		  "edge180"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "TDC and BDC detection"
+		  SrcPort		  1
+		  Points		  [-75, 0]
+		  DstBlock		  "positive edge to\ndual edge conversion"
+		  DstPort		  trigger
+		}
+		Annotation {
+		  SID			  "495"
+		  Name			  "Rotational Velocity to Synchronized \nDiscrete Event Conversion"
+		  Position		  [224, 198]
+		  ZOrder		  -1
+		  FontSize		  14
+		  FontWeight		  "bold"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "crank speed\n(rpm)"
+	      SID		      "284"
+	      Position		      [825, 85, 845, 105]
+	      ZOrder		      -14
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Torque"
+	      SID		      "380"
+	      Position		      [720, 313, 750, 327]
+	      ZOrder		      -9
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "valve timing"
+	      SrcPort		      1
+	      Points		      [-90, 0]
+	      DstBlock		      "Compression"
+	      DstPort		      trigger
+	    }
+	    Line {
+	      SrcBlock		      "Compression"
+	      SrcPort		      2
+	      Points		      [10, 0; 0, 75; -245, 0; 0, -70]
+	      DstBlock		      "Throttle & Manifold1"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Engine\nDynamics"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[0, -105]
+		Branch {
+		  DstBlock		  "valve timing"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "rad/s\nto rpm"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 95; -260, 0]
+		Branch {
+		  Points		  [-280, 0; 0, -110]
+		  DstBlock		  "Throttle & Manifold1"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [0, -115]
+		  DstBlock		  "Combustion"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Compression"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Combustion"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Combustion"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      Branch {
+		DstBlock		"Engine\nDynamics"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 130]
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Torque"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "LoadTorque"
+	      SrcBlock		      "Torque drag"
+	      SrcPort		      1
+	      Points		      [440, 0; 0, -60]
+	      Branch {
+		Points			[0, -105]
+		DstBlock		"Engine\nDynamics"
+		DstPort			2
+	      }
+	      Branch {
+		Labels			[-1, 1]
+		DstBlock		"Mux"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Throttle & Manifold1"
+	      SrcPort		      1
+	      DstBlock		      "Compression"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Throttle angle (degree)"
+	      SrcPort		      1
+	      DstBlock		      "Throttle & Manifold1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "rad/s\nto rpm"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		DstBlock		"crank speed\n(rpm)"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 115]
+		DstBlock		"Compare\nTo Constant"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Spark Adnvance \n(degree)"
+	      SrcPort		      1
+	      Points		      [330, 0; 0, -120]
+	      DstBlock		      "Combustion"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Compare\nTo Constant"
+	      SrcPort		      1
+	      DstBlock		      "Stop Simulation"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Ignition System"
+	  SID			  "390"
+	  Ports			  [5, 4]
+	  Position		  [280, 328, 480, 442]
+	  ZOrder		  -19
+	  ForegroundColor	  "orange"
+	  BackgroundColor	  "orange"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Ignition System"
+	    Location		    [-8, -8, 1288, 768]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "137"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ignite1"
+	      SID		      "393"
+	      Position		      [200, 88, 230, 102]
+	      ZOrder		      -1
+	      BackgroundColor	      "yellow"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ignite2"
+	      SID		      "394"
+	      Position		      [200, 123, 230, 137]
+	      ZOrder		      -2
+	      BackgroundColor	      "yellow"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ignite3"
+	      SID		      "395"
+	      Position		      [200, 158, 230, 172]
+	      ZOrder		      -3
+	      BackgroundColor	      "yellow"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ignite4"
+	      SID		      "396"
+	      Position		      [200, 193, 230, 207]
+	      ZOrder		      -4
+	      BackgroundColor	      "yellow"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "RPM"
+	      SID		      "457"
+	      Position		      [25, 328, 55, 342]
+	      ZOrder		      -1
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Conv. to\ndegree"
+	      SID		      "397"
+	      Position		      [480, 197, 540, 233]
+	      ZOrder		      -6
+	      Gain		      "180/pi"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Conv. to\ndegree 2"
+	      SID		      "398"
+	      Position		      [480, 102, 540, 138]
+	      ZOrder		      -7
+	      BackgroundColor	      "yellow"
+	      Gain		      "180/pi"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Create Ignition Signals"
+	      SID		      "399"
+	      Ports		      [5, 2]
+	      Position		      [280, 72, 390, 258]
+	      ZOrder		      -8
+	      BackgroundColor	      "yellow"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Create Ignition Signals"
+		Location		[-97, -1176, 1510, -16]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Ignite1"
+		  SID			  "400"
+		  Position		  [125, 103, 155, 117]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Ignite2"
+		  SID			  "401"
+		  Position		  [125, 148, 155, 162]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Ignite3"
+		  SID			  "402"
+		  Position		  [125, 193, 155, 207]
+		  ZOrder		  -3
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Ignite4"
+		  SID			  "403"
+		  Position		  [125, 238, 155, 252]
+		  ZOrder		  -4
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "angle (grad)"
+		  SID			  "404"
+		  Position		  [80, 490, 110, 505]
+		  ZOrder		  -5
+		  BlockRotation		  270
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Chart"
+		  SID			  "476"
+		  Ports			  [5, 1]
+		  Position		  [250, 42, 395, 268]
+		  ZOrder		  -1
+		  LibraryVersion	  "1.244"
+		  ErrorFcn		  "Stateflow.Translate.translate"
+		  PermitHierarchicalResolution "ExplicitOnly"
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  SFBlockType		  "Chart"
+		  System {
+		    Name		    "Chart"
+		    Location		    [-97, -1176, 1510, -16]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    "37"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "CrankPos"
+		    SID			    "476::26"
+		    Position		    [20, 101, 40, 119]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IgniteCmd1"
+		    SID			    "476::27"
+		    Position		    [20, 136, 40, 154]
+		    ZOrder		    -2
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IgniteCmd2"
+		    SID			    "476::28"
+		    Position		    [20, 171, 40, 189]
+		    ZOrder		    -3
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IgniteCmd3"
+		    SID			    "476::29"
+		    Position		    [20, 206, 40, 224]
+		    ZOrder		    -4
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "IgniteCmd4"
+		    SID			    "476::30"
+		    Position		    [20, 246, 40, 264]
+		    ZOrder		    -5
+		    Port		    "5"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    "476::36"
+		    Ports		    [1, 1]
+		    Position		    [270, 230, 320, 270]
+		    ZOrder		    6
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    S-Function
+		    Name		    " SFunction "
+		    SID			    "476::35"
+		    Tag			    "Stateflow S-Function motorsteuerung 2"
+		    Ports		    [5, 2]
+		    Position		    [180, 100, 230, 220]
+		    ZOrder		    5
+		    FunctionName	    "sf_sfun"
+		    PortCounts		    "[5 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "AdvanceAngle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    "476::37"
+		    Position		    [460, 241, 480, 259]
+		    ZOrder		    7
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "AdvanceAngle"
+		    SID			    "476::25"
+		    Position		    [460, 101, 480, 119]
+		    ZOrder		    -9
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "CrankPos"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "IgniteCmd1"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "IgniteCmd2"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "IgniteCmd3"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    4
+		    }
+		    Line {
+		    SrcBlock		    "IgniteCmd4"
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    5
+		    }
+		    Line {
+		    Name		    "AdvanceAngle"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "AdvanceAngle"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Normalize\ncrankshaft\nrev. angle"
+		  SID			  "422"
+		  Ports			  [1, 1]
+		  Position		  [71, 310, 119, 455]
+		  ZOrder		  -7
+		  BlockRotation		  270
+		  BackgroundColor	  "darkGreen"
+		  NamePlacement		  "alternate"
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "Normalize\ncrankshaft\nrev. angle"
+		    Location		    [-97, -1176, 1510, -16]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "112"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Total\n angle"
+		    SID			    "423"
+		    Position		    [35, 88, 65, 102]
+		    ZOrder		    -1
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "total\ncrank-\nshaft\nangle"
+		    PropagatedSignals	    "total crankshaft\nrev. angle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    ComplexToMagnitudeAngle
+		    Name		    "Complex to\nMagnitude-Angle"
+		    SID			    "424"
+		    Ports		    [1, 1]
+		    Position		    [275, 77, 315, 113]
+		    ZOrder		    -2
+		    NamePlacement	    "alternate"
+		    ShowName		    off
+		    Output		    "Angle"
+		    Port {
+		    PortNumber		    1
+		    Name		    "cyclic\ncam\nangle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    "425"
+		    Position		    [370, 160, 400, 190]
+		    ZOrder		    -3
+		    BlockRotation	    270
+		    NamePlacement	    "alternate"
+		    ShowName		    off
+		    Value		    "2*pi"
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "Gain1"
+		    SID			    "426"
+		    Position		    [490, 80, 530, 110]
+		    ZOrder		    -4
+		    NamePlacement	    "alternate"
+		    ShowName		    off
+		    Gain		    "2"
+		    Port {
+		    PortNumber		    1
+		    Name		    "cyclic\ncrank-\nshaft\nangle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "Gain4"
+		    SID			    "427"
+		    Position		    [120, 80, 160, 110]
+		    ZOrder		    -5
+		    NamePlacement	    "alternate"
+		    ShowName		    off
+		    Gain		    "1/2"
+		    Port {
+		    PortNumber		    1
+		    Name		    "total\ncam-\nshaft\nangle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    MagnitudeAngleToComplex
+		    Name		    "Magnitude-Angle\nto Complex"
+		    SID			    "428"
+		    Ports		    [1, 1]
+		    Position		    [210, 77, 245, 113]
+		    ZOrder		    -6
+		    ShowName		    off
+		    Input		    "Angle"
+		    ConstantPart	    "1"
+		    }
+		    Block {
+		    BlockType		    Sum
+		    Name		    "Sum"
+		    SID			    "429"
+		    Ports		    [2, 1]
+		    Position		    [375, 120, 395, 140]
+		    ZOrder		    -7
+		    ShowName		    off
+		    IconShape		    "round"
+		    Inputs		    "|++"
+		    InputSameDT		    off
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch"
+		    SID			    "430"
+		    Position		    [420, 80, 450, 110]
+		    ZOrder		    -8
+		    InputSameDT		    off
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Normalized\nto [0,4 pi)"
+		    SID			    "431"
+		    Position		    [600, 88, 630, 102]
+		    ZOrder		    -9
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "total\ncam-\nshaft\nangle"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Gain4"
+		    SrcPort		    1
+		    DstBlock		    "Magnitude-Angle\nto Complex"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "total\ncrank-\nshaft\nangle"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Total\n angle"
+		    SrcPort		    1
+		    DstBlock		    "Gain4"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Magnitude-Angle\nto Complex"
+		    SrcPort		    1
+		    DstBlock		    "Complex to\nMagnitude-Angle"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "cyclic\ncam\nangle"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Complex to\nMagnitude-Angle"
+		    SrcPort		    1
+		    Points		    [35, 0]
+		    Branch {
+		    Points		    [0, 35]
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -34; 50, 0]
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    Labels		    [2, 0]
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    Points		    [4, 0; 0, -25]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Switch"
+		    SrcPort		    1
+		    DstBlock		    "Gain1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "cyclic\ncrank-\nshaft\nangle"
+		    Labels		    [0, 0]
+		    SrcBlock		    "Gain1"
+		    SrcPort		    1
+		    DstBlock		    "Normalized\nto [0,4 pi)"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    SID			    "496"
+		    Name		    "."
+		    Position		    [43, 100]
+		    ZOrder		    -1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Ignition Advance \nAngle (rad)"
+		  SID			  "432"
+		  Position		  [465, 148, 495, 162]
+		  ZOrder		  -8
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "normalized angle \n(rad)"
+		  SID			  "434"
+		  Position		  [435, 288, 465, 302]
+		  ZOrder		  -9
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Normalize\ncrankshaft\nrev. angle"
+		  SrcPort		  1
+		  Points		  [0, -10]
+		  Branch {
+		    Points		    [0, -230]
+		    DstBlock		    "Chart"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "normalized angle \n(rad)"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "angle (grad)"
+		  SrcPort		  1
+		  DstBlock		  "Normalize\ncrankshaft\nrev. angle"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Ignite1"
+		  SrcPort		  1
+		  DstBlock		  "Chart"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Chart"
+		  SrcPort		  1
+		  DstBlock		  "Ignition Advance \nAngle (rad)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Ignite2"
+		  SrcPort		  1
+		  DstBlock		  "Chart"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Ignite3"
+		  SrcPort		  1
+		  DstBlock		  "Chart"
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "Ignite4"
+		  SrcPort		  1
+		  DstBlock		  "Chart"
+		  DstPort		  5
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Create Marks"
+	      SID		      "435"
+	      Ports		      [1, 2]
+	      Position		      [275, 303, 395, 367]
+	      ZOrder		      -9
+	      BackgroundColor	      "gray"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Create Marks"
+		Location		[-97, -1176, 1510, -16]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"254"
+		Block {
+		  BlockType		  Inport
+		  Name			  "angle (grad)"
+		  SID			  "436"
+		  Position		  [25, 138, 55, 152]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "437"
+		  Position		  [230, 25, 260, 55]
+		  ZOrder		  -2
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  BackgroundColor	  "yellow"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "438"
+		  Position		  [90, 94, 135, 126]
+		  ZOrder		  -3
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Gain			  "60"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain2"
+		  SID			  "439"
+		  Position		  [90, 159, 135, 191]
+		  ZOrder		  -4
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  Gain			  "1/2"
+		  Port {
+		    PortNumber		    1
+		    Name		    "total\ncamshaft\nrev. angle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  SID			  "440"
+		  Ports			  [2, 1]
+		  Position		  [265, 102, 295, 133]
+		  ZOrder		  -5
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "441"
+		  Ports			  [2, 1]
+		  Position		  [265, 167, 295, 198]
+		  ZOrder		  -6
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Trigonometry
+		  Name			  "Trigonometric\nFunction"
+		  SID			  "442"
+		  Ports			  [1, 1]
+		  Position		  [205, 95, 235, 125]
+		  ZOrder		  -7
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Trigonometry
+		  Name			  "Trigonometric\nFunction1"
+		  SID			  "443"
+		  Ports			  [1, 1]
+		  Position		  [205, 160, 235, 190]
+		  ZOrder		  -8
+		  BackgroundColor	  "yellow"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "minor"
+		  SID			  "444"
+		  Position		  [320, 113, 350, 127]
+		  ZOrder		  -9
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "major"
+		  SID			  "445"
+		  Position		  [320, 178, 350, 192]
+		  ZOrder		  -10
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  Points		  [0, 65]
+		  Branch {
+		    Points		    [0, 65]
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Trigonometric\nFunction"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "total\ncamshaft\nrev. angle"
+		  Labels		  [1, 1]
+		  SrcBlock		  "Gain2"
+		  SrcPort		  1
+		  DstBlock		  "Trigonometric\nFunction1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "angle (grad)"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    DstBlock		    "Gain2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Gain"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "minor"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "major"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Trigonometric\nFunction"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Trigonometric\nFunction1"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "RPM to angle\nconversion"
+	      SID		      "447"
+	      Ports		      [1, 1]
+	      Position		      [145, 304, 240, 366]
+	      ZOrder		      -10
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"RPM to angle\nconversion"
+		Location		[-97, -1176, 1510, -16]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "RPM"
+		  SID			  "448"
+		  Position		  [35, 230, 65, 245]
+		  ZOrder		  -1
+		  BlockRotation		  270
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain1"
+		  SID			  "449"
+		  Position		  [28, 65, 72, 95]
+		  ZOrder		  -2
+		  BlockRotation		  270
+		  BackgroundColor	  "lightBlue"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  Gain			  "2*pi"
+		  Port {
+		    PortNumber		    1
+		    Name		    "total crankshaft\nrev. angle"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain3"
+		  SID			  "450"
+		  Position		  [28, 175, 72, 205]
+		  ZOrder		  -3
+		  BlockRotation		  270
+		  BackgroundColor	  "lightBlue"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  Gain			  "1/60"
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "Total\nrev.s"
+		  SID			  "451"
+		  Ports			  [1, 1]
+		  Position		  [35, 120, 65, 150]
+		  ZOrder		  -4
+		  BlockRotation		  270
+		  BackgroundColor	  "lightBlue"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "angle (rad)"
+		  SID			  "452"
+		  Position		  [35, 15, 65, 30]
+		  ZOrder		  -5
+		  BlockRotation		  270
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Gain3"
+		  SrcPort		  1
+		  DstBlock		  "Total\nrev.s"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Total\nrev.s"
+		  SrcPort		  1
+		  DstBlock		  "Gain1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "total crankshaft\nrev. angle"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Gain1"
+		  SrcPort		  1
+		  DstBlock		  "angle (rad)"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "RPM"
+		  SrcPort		  1
+		  DstBlock		  "Gain3"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Minor_Mark"
+	      SID		      "453"
+	      Position		      [450, 313, 480, 327]
+	      ZOrder		      -11
+	      BackgroundColor	      "gray"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Major_Mark"
+	      SID		      "454"
+	      Position		      [450, 343, 480, 357]
+	      ZOrder		      -12
+	      BackgroundColor	      "gray"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Ignition angles\n(degree)"
+	      SID		      "455"
+	      Position		      [600, 113, 630, 127]
+	      ZOrder		      -13
+	      BackgroundColor	      "yellow"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Real_Position"
+	      SID		      "456"
+	      Position		      [600, 208, 630, 222]
+	      ZOrder		      -9
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Create Marks"
+	      SrcPort		      2
+	      DstBlock		      "Major_Mark"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Create Marks"
+	      SrcPort		      1
+	      DstBlock		      "Minor_Mark"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ignite1"
+	      SrcPort		      1
+	      DstBlock		      "Create Ignition Signals"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ignite2"
+	      SrcPort		      1
+	      DstBlock		      "Create Ignition Signals"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Ignite3"
+	      SrcPort		      1
+	      DstBlock		      "Create Ignition Signals"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Ignite4"
+	      SrcPort		      1
+	      DstBlock		      "Create Ignition Signals"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Create Ignition Signals"
+	      SrcPort		      2
+	      DstBlock		      "Conv. to\ndegree"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Create Ignition Signals"
+	      SrcPort		      1
+	      DstBlock		      "Conv. to\ndegree 2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "RPM to angle\nconversion"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Labels			[0, 0]
+		DstBlock		"Create Marks"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[0, 0]
+		Points			[0, -100]
+		DstBlock		"Create Ignition Signals"
+		DstPort			5
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Conv. to\ndegree"
+	      SrcPort		      1
+	      DstBlock		      "Real_Position"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Conv. to\ndegree 2"
+	      SrcPort		      1
+	      DstBlock		      "Ignition angles\n(degree)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "RPM"
+	      SrcPort		      1
+	      DstBlock		      "RPM to angle\nconversion"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Real Position"
+	  SID			  "519"
+	  Position		  [610, 448, 640, 462]
+	  ZOrder		  8
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Major Mark"
+	  SID			  "520"
+	  Position		  [610, 353, 640, 367]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Minor Mark"
+	  SID			  "521"
+	  Position		  [610, 298, 640, 312]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Crank Speed"
+	  SID			  "522"
+	  Position		  [610, 513, 640, 527]
+	  ZOrder		  11
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Torque"
+	  SID			  "523"
+	  Position		  [610, 583, 640, 597]
+	  ZOrder		  12
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  " Calc. Spark Advance"
+	  SID			  "524"
+	  Position		  [610, 403, 640, 417]
+	  ZOrder		  13
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Ignite3"
+	  SrcPort		  1
+	  Points		  [0, 80]
+	  DstBlock		  "Ignition System"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Ignite4"
+	  SrcPort		  1
+	  Points		  [0, 100]
+	  DstBlock		  "Ignition System"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Ignite1"
+	  SrcPort		  1
+	  Points		  [0, 40]
+	  DstBlock		  "Ignition System"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ignite2"
+	  SrcPort		  1
+	  Points		  [0, 60]
+	  DstBlock		  "Ignition System"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Throttle Angle(degree)"
+	  SrcPort		  1
+	  DstBlock		  "Engine"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Engine"
+	  SrcPort		  1
+	  Points		  [14, 0]
+	  Branch {
+	    Points		    [0, -50; -251, 0; 0, -45]
+	    DstBlock		    "Ignition System"
+	    DstPort		    5
+	  }
+	  Branch {
+	    DstBlock		    "Crank Speed"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Ignition System"
+	  SrcPort		  1
+	  Points		  [62, 0; 0, -35]
+	  DstBlock		  "Minor Mark"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ignition System"
+	  SrcPort		  2
+	  Points		  [65, 0; 0, -10]
+	  DstBlock		  "Major Mark"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ignition System"
+	  SrcPort		  3
+	  Points		  [65, 0; 0, 10]
+	  DstBlock		  " Calc. Spark Advance"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ignition System"
+	  SrcPort		  4
+	  Points		  [62, 0; 0, 25]
+	  DstBlock		  "Real Position"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Spark Advance (degree)"
+	  SrcPort		  1
+	  DstBlock		  "Engine"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Engine"
+	  SrcPort		  2
+	  DstBlock		  "Torque"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Torque Drag"
+	  SrcPort		  1
+	  DstBlock		  "Engine"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Engine Controller"
+      SID		      "41"
+      Ports		      [2, 7, 0, 1]
+      Position		      [670, 247, 870, 423]
+      ZOrder		      -7
+      BlockMirror	      on
+      ForegroundColor	      "darkGreen"
+      BackgroundColor	      "darkGreen"
+      NamePlacement	      "alternate"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "Chart"
+      System {
+	Name			"Engine Controller"
+	Location		[-8, -8, 1288, 768]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"29"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Major_Mark"
+	  SID			  "41::1"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Minor_Mark"
+	  SID			  "41::2"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "clk"
+	  SID			  "41::4"
+	  Ports			  [0, 1]
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  -3
+	  ShowOutputPort	  on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "41::28"
+	  Ports			  [1, 1]
+	  Position		  [270, 390, 320, 430]
+	  ZOrder		  6
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "41::27"
+	  Tag			  "Stateflow S-Function motorsteuerung 1"
+	  Ports			  [3, 8]
+	  Position		  [180, 100, 230, 280]
+	  ZOrder		  5
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[3 8]"
+	  EnableBusSupport	  on
+	  Port {
+	    PortNumber		    2
+	    Name		    "Ignite1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "Ignite2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "Ignite3"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "Ignite4"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "RPM"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "Adv"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "position"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "41::29"
+	  Position		  [460, 401, 480, 419]
+	  ZOrder		  7
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ignite1"
+	  SID			  "41::8"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  -7
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ignite2"
+	  SID			  "41::9"
+	  Position		  [460, 136, 480, 154]
+	  ZOrder		  -8
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ignite3"
+	  SID			  "41::10"
+	  Position		  [460, 171, 480, 189]
+	  ZOrder		  -9
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ignite4"
+	  SID			  "41::11"
+	  Position		  [460, 206, 480, 224]
+	  ZOrder		  -10
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "RPM"
+	  SID			  "41::12"
+	  Position		  [460, 246, 480, 264]
+	  ZOrder		  -11
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Adv"
+	  SID			  "41::20"
+	  Position		  [460, 281, 480, 299]
+	  ZOrder		  -12
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "position"
+	  SID			  "41::18"
+	  Position		  [460, 316, 480, 334]
+	  ZOrder		  -13
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Major_Mark"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Minor_Mark"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Ignite1"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  Points		  [0, -30]
+	  DstBlock		  "Ignite1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ignite2"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "Ignite2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ignite3"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "Ignite3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ignite4"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "Ignite4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "RPM"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  6
+	  DstBlock		  "RPM"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Adv"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  7
+	  DstBlock		  "Adv"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "position"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  8
+	  DstBlock		  "position"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "clk"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Engine Data"
+      SID		      "43"
+      Ports		      [3]
+      Position		      [460, 491, 500, 539]
+      ZOrder		      -8
+      BlockMirror	      on
+      BackgroundColor	      "lightBlue"
+      Floating		      off
+      Location		      [7, 56, 1287, 807]
+      Open		      off
+      NumInputPorts	      "3"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"RPM"
+	axes2			"Torque"
+	axes3			"Throttle"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "5"
+      YMin		      "500~-40~0"
+      YMax		      "9000~110~90"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Ignition\nAngles"
+      SID		      "39"
+      Ports		      [1]
+      Position		      [1035, 857, 1075, 903]
+      ZOrder		      -9
+      BackgroundColor	      "lightBlue"
+      Floating		      off
+      Location		      [853, 175, 1177, 697]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Current Ignition Angles"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "5"
+      YMin		      "-15"
+      YMax		      "90"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "100000"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "42"
+      Ports		      [3, 1]
+      Position		      [545, 481, 550, 519]
+      ZOrder		      -20
+      BlockMirror	      on
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "59"
+      Ports		      [2, 1]
+      Position		      [575, 221, 580, 259]
+      ZOrder		      -21
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      "477"
+      Ports		      [2, 1]
+      Position		      [995, 861, 1000, 899]
+      ZOrder		      -22
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Positions"
+      SID		      "56"
+      Ports		      [5]
+      Position		      [460, 276, 500, 344]
+      ZOrder		      -3
+      BlockMirror	      on
+      BackgroundColor	      "lightBlue"
+      Floating		      off
+      Location		      [5, 43, 1285, 794]
+      Open		      off
+      NumInputPorts	      "5"
+      List {
+	ListType		AxesTitles
+	axes1			"Crank Position"
+	axes2			"Ignite 1"
+	axes3			"Ignite 2"
+	axes4			"Ignite 3"
+	axes5			"Ignite 4"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "1"
+      YMin		      "-100~0~0~0~0"
+      YMax		      "750~1~1~1~1"
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Repeating\nSequence"
+      SID		      "510"
+      Ports		      [0, 1]
+      Position		      [380, 985, 410, 1015]
+      ZOrder		      9
+      BackgroundColor	      "red"
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Sources/Repeating\nSequence"
+      SourceType	      "Repeating table"
+      rep_seq_t		      "[0 1 2 3 4 5 6]"
+      rep_seq_y		      "[20 40 60 80 40 0 20]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Spark Advance \nSlider"
+      SID		      "374"
+      Ports		      [1, 1]
+      Position		      [380, 845, 410, 875]
+      ZOrder		      -28
+      ForegroundColor	      "blue"
+      BackgroundColor	      "red"
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      low		      "-15"
+      gain		      "5"
+      high		      "60"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Switch 1"
+      SID		      "459"
+      Position		      [620, 832, 650, 868]
+      ZOrder		      -13
+      BackgroundColor	      "red"
+      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Switch 2"
+      SID		      "376"
+      Position		      [450, 712, 480, 748]
+      ZOrder		      -13
+      BackgroundColor	      "red"
+      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Switch 3"
+      SID		      "480"
+      Position		      [380, 702, 410, 738]
+      ZOrder		      -13
+      BackgroundColor	      "red"
+      CurrentSetting	      "0"
+    }
+    Block {
+      BlockType		      ManualSwitch
+      Name		      "Switch 4"
+      SID		      "504"
+      Position		      [505, 882, 535, 918]
+      ZOrder		      1
+      BackgroundColor	      "red"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Target RPM \nSlider"
+      SID		      "483"
+      Ports		      [1, 1]
+      Position		      [90, 640, 120, 670]
+      ZOrder		      -28
+      ForegroundColor	      "blue"
+      BackgroundColor	      "red"
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      low		      "800"
+      gain		      "7000"
+      high		      "7000"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Throttle Control"
+      SID		      "481"
+      Ports		      [2, 1, 0, 1]
+      Position		      [165, 512, 340, 703]
+      ZOrder		      -1
+      ForegroundColor	      "darkGreen"
+      BackgroundColor	      "darkGreen"
+      LibraryVersion	      "1.244"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "Chart"
+      System {
+	Name			"Throttle Control"
+	Location		[227, 345, 838, 789]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"36"
+	Block {
+	  BlockType		  Inport
+	  Name			  "RPM"
+	  SID			  "481::25"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "TargetRPM"
+	  SID			  "481::26"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "clk"
+	  SID			  "481::28"
+	  Ports			  [0, 1]
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  -3
+	  StatesWhenEnabling	  "held"
+	  ShowOutputPort	  on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "481::35"
+	  Ports			  [1, 1]
+	  Position		  [270, 230, 320, 270]
+	  ZOrder		  6
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "481::34"
+	  Tag			  "Stateflow S-Function motorsteuerung 3"
+	  Ports			  [3, 2]
+	  Position		  [180, 100, 230, 180]
+	  ZOrder		  5
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[3 2]"
+	  EnableBusSupport	  on
+	  Port {
+	    PortNumber		    2
+	    Name		    "Throttle"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "481::36"
+	  Position		  [460, 241, 480, 259]
+	  ZOrder		  7
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Throttle"
+	  SID			  "481::27"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  -7
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "RPM"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TargetRPM"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Throttle"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "Throttle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "clk"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Throttle Evolution"
+      SID		      "70"
+      Tag		      "STV Subsys"
+      Ports		      [0, 1]
+      Position		      [210, 750, 295, 790]
+      ZOrder		      -20
+      ForegroundColor	      "blue"
+      BackgroundColor	      "red"
+      CopyFcn		      "sigbuilder_block('copy');"
+      DeleteFcn		      "sigbuilder_block('delete');"
+      LoadFcn		      "sigbuilder_block('load');"
+      ModelCloseFcn	      "sigbuilder_block('modelClose');"
+      PreSaveFcn	      "sigbuilder_block('preSave');"
+      StartFcn		      "sigbuilder_block('start');"
+      PauseFcn		      "sigbuilder_block('pause')"
+      ContinueFcn	      "sigbuilder_block('continue')"
+      StopFcn		      "sigbuilder_block('stop');"
+      NameChangeFcn	      "sigbuilder_block('namechange');"
+      ClipboardFcn	      "sigbuilder_block('clipboard');"
+      OpenFcn		      "sigbuilder_block('open',[54.75 146.25 550.5 390.75 ]);"
+      CloseFcn		      "sigbuilder_block('close');"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      on
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		19
+	$ClassName		"Simulink.Mask"
+	Type			"Sigbuilder block"
+	Description		"Simulink:masks:SigbuilderBlock_MD"
+	Initialization		"if ~strcmp(get_param(bdroot(gcbh),'SimulationStatus'),'stopped') tuvar = sigbuilder_block('maskInit'"
+	"); end"
+	SelfModifiable		"on"
+	Display			"plot(0, 0, 100, 100,[2, 2, 32, 32, 2], [68, 8, 8, 68, 68],[32, 2], [38, 38], [32, 19, 2],[53, 60, 44], [32"
+	", 17, 17, 2],[16, 16, 31, 31]);txt = getActiveGroup(gcbh);text(2, 100, txt,'verticalAlignment', 'top');"
+	IconOpaque		"off"
+	IconRotate		"port"
+	Capabilities		"slmaskedcaps(gcbh)"
+      }
+      System {
+	Name			"Throttle Evolution"
+	Location		[450, 52, 1006, 537]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"4"
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "70:1"
+	  Tag			  "STV Demux"
+	  Ports			  [1, 1]
+	  Position		  [150, 34, 160, 606]
+	  ZOrder		  -1
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "FromWs"
+	  SID			  "70:2"
+	  Tag			  "STV FromWs"
+	  Position		  [30, 300, 115, 350]
+	  ZOrder		  -2
+	  VariableName		  "tuvar"
+	  SampleTime		  "0"
+	  ZeroCross		  on
+	  SigBuilderData	  "DataTag0"
+	  VnvData		  "DataTag1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Throttle"
+	  SID			  "70:3"
+	  Tag			  "STV Outport"
+	  Position		  [280, 30, 300, 40]
+	  ZOrder		  -3
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -285]
+	  DstBlock		  "Throttle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "FromWs"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Throttle Slider"
+      SID		      "379"
+      Ports		      [1, 1]
+      Position		      [380, 785, 410, 815]
+      ZOrder		      -28
+      ForegroundColor	      "blue"
+      BackgroundColor	      "red"
+      LibraryVersion	      "1.274"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      low		      "0"
+      gain		      "73.8249"
+      high		      "90"
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      3
+      Points		      [-25, 0; 0, 15]
+      Branch {
+	Points			[0, 375]
+	DstBlock		"Engine"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"Positions"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      2
+      Points		      [-35, 0; 0, 25]
+      Branch {
+	Points			[0, 340]
+	DstBlock		"Engine"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Positions"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      1
+      Points		      [-45, 0; 0, 35]
+      Branch {
+	Points			[0, 305]
+	DstBlock		"Engine"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Positions"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      4
+      Points		      [-15, 0; 0, 5]
+      Branch {
+	Points			[0, 410]
+	DstBlock		"Engine"
+	DstPort			4
+      }
+      Branch {
+	DstBlock		"Positions"
+	DstPort			5
+      }
+    }
+    Line {
+      SrcBlock		      "10 mus\nclock"
+      SrcPort		      1
+      Points		      [0, -5]
+      Branch {
+	DstBlock		"Engine Controller"
+	DstPort			trigger
+      }
+      Branch {
+	Points			[-520, 0]
+	DstBlock		"Throttle Control"
+	DstPort			trigger
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      5
+      Points		      [-90, 0; 0, 70]
+      Branch {
+	Points			[-425, 0]
+	DstBlock		"Throttle Control"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 60]
+	DstBlock		"Mux"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      7
+      Points		      [-60, 0; 0, -160]
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      Points		      [-40, 0; 0, 40]
+      DstBlock		      "Positions"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine Controller"
+      SrcPort		      6
+      Points		      [-75, 0]
+      Branch {
+	DstBlock		"Calculated Advance"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 133; 370, 0; 0, 352]
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Switch 2"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Engine Data"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"Engine"
+	DstPort			5
+      }
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[276, 0]
+	Branch {
+	  DstBlock		  "Spark Advance \nSlider"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -60]
+	  DstBlock		  "Throttle Slider"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Target RPM \nSlider"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Throttle Slider"
+      SrcPort		      1
+      Points		      [10, 0; 0, -60]
+      DstBlock		      "Switch 2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Spark Advance \nSlider"
+      SrcPort		      1
+      DstBlock		      "Switch 1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Ignition\nAngles"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Engine Data"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Switch 3"
+      SrcPort		      1
+      DstBlock		      "Switch 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Throttle Evolution"
+      SrcPort		      1
+      Points		      [50, 0; 0, -40]
+      DstBlock		      "Switch 3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Throttle Control"
+      SrcPort		      1
+      Points		      [5, 0; 0, 100]
+      DstBlock		      "Switch 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Target RPM \nSlider"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Throttle Control"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -165; 230, 0; 0, 85; 205, 0]
+	DstBlock		"Mux"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [50, 0; 0, -40]
+      DstBlock		      "Switch 4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Repeating\nSequence"
+      SrcPort		      1
+      Points		      [70, 0; 0, -90]
+      DstBlock		      "Switch 4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      6
+      Points		      [51, 0]
+      Branch {
+	Points			[0, 67; -352, 0; 0, -117]
+	DstBlock		"Switch 1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Switch 1"
+      SrcPort		      1
+      DstBlock		      "Engine"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Switch 4"
+      SrcPort		      1
+      DstBlock		      "Engine"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      1
+      Points		      [8, 0; 0, -64; -233, 0; 0, -321]
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      2
+      Points		      [105, 0; 0, -380]
+      DstBlock		      "Engine Controller"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      3
+      Points		      [29, 0; 0, -345]
+      DstBlock		      "Engine Controller"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      4
+      Points		      [54, 0; 0, -280]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Engine"
+      SrcPort		      5
+      Points		      [17, 0; 0, -297; -364, 0; 0, -23]
+      DstBlock		      "Engine Data"
+      DstPort		      2
+    }
+    Annotation {
+      SID		      "497"
+      Position		      [193, 581]
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "498"
+      Position		      [764, 349]
+      ZOrder		      -2
+    }
+    Annotation {
+      SID		      "499"
+      Position		      [256, 621]
+      ZOrder		      -3
+    }
+    Annotation {
+      SID		      "500"
+      Position		      [259, 538]
+      ZOrder		      -4
+    }
+    Annotation {
+      SID		      "501"
+      Position		      [235, 606]
+      ZOrder		      -5
+    }
+  }
+}
+MatData {
+  NumRecords		  2
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    * H   8    (     @         %    \"     $    !     0         %  0 %@    $   \"P    9W)I9"
+    "%-E='1I;F<              &-H86YN96QS                  !A>&5S                        8V]M;6]N                     &1"
+    "A=&%3970                   !D871A4V5T261X                :7-697)I9FEC871I;VY6:7-I8FQE '-B;V)J                     "
+    "  .    ,     8    (    !          %    \"     $    \"     0         0  ( ;VX   X   #@ @  !@    @    \"          4 "
+    "   (     0    $    !          4 !  *     0   %H   !S=&5P6       <W1E<%D      'E-:6X       !Y36%X        8V]L;W(   "
+    "   &QI;F53='EL90!L:6YE5VED=&@ ;&%B96P      &]U=$EN9&5X           .    .     8    (    !@         %    \"     $    "
+    "!     0         )    \"    )J9F9F9F<D_#@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+    "\":F9F9F9G)/PX    X    !@    @    &          4    (     0    $    !          D    (            \\/\\.    .     8  "
+    "  (    !@         %    \"     $    !     0         )    \"            /!_#@   $@    &    \"     8         !0    @ "
+    "   !     P    $         \"0   !@   !\"/NC9K/KJ/P                     .    ,     8    (    !          %    \"     $"
+    "    !     0         0  $ +0    X    X    !@    @    &          4    (     0    $    !          D    (            ^"
+    "#\\.    .     8    (    !          %    \"     $    (     0         0    \"    %1H<F]T=&QE#@   #@    &    \"     8"
+    "         !0    @    !     0    $         \"0    @           #P/PX    8 0  !@    @    \"          4    (     0    $"
+    "    !          4 !  )     0   !L   !C:&%N;F5L<P!Y3&EM      !L86)E;%!O<P        X    X    !@    @    &          4  "
+    "  (     0    $    !          D    (            \\#\\.    0     8    (    !@         %    \"     $    \"     0     "
+    "    )    $            \"3         64 .    ,     8    (    !          %    \"     $    \"     0         0  ( 5$P   "
+    "X   !H @  !@    @    \"          4    (     0    $    !          4 !  .     0   &(   !D:7-P5&EM90       &1I<W!-;V1"
+    "E        ;6EN5&EM90        !M87A4:6UE         &%F=&5R1FEN86Q3='( <V%M<&QE5&EM90    !Z97)O0W)O<W,               X  "
+    " !     !@    @    &          4    (     0    (    !          D    0                       L0 X    X    !@    @    "
+    "&          4    (     0    $    !          D    (            \\#\\.    .     8    (    !@         %    \"     $   "
+    " !     0         )    \"               #@   #@    &    \"     8         !0    @    !     0    $         \"0    @  "
+    "          L0 X   !     !@    @    $          4    (     0    L    !         !     +    17AT<F%P;VQA=&4       X    "
+    "X    !@    @    &          4    (     0    $    !          D    (               .    ,     8    (    !          % "
+    "   \"     $    \"     0         0  ( ;VX   X   \"  0  !@    @    \"          4    (     0    $    !          4 !  "
+    ".     0   #@   !A8W1I=F5$:7-P261X '1I;65286YG90      ;F%M90            !D:7-P;&%Y4F%N9V4   X    X    !@    @    & "
+    "         4    (     0    $    !          D    (            \\#\\.    0     8    (    !@         %    \"     $    \""
+    "     0         )    $                       +$ .    .     8    (    !          %    \"     $    '     0         0 "
+    "   !P   $=R;W5P(#$ #@   $     &    \"     8         !0    @    !     @    $         \"0   !                       "
+    "\"Q #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &"
+    "          4    (     0    $    !          D    (               .    @     8    (    $0         !          $ ! !-0T"
+    "]3 0    @   !3:6=3=6ET90X   !(    !@    @    -          4    (    !@    $    !          8    8        W0(    !    "
+    " 0    $    #    #@   * +   &    \"     D         !0    @    !    < L   $          @   ' +     4E-      X   #0\"@  "
+    "!@    @    \"          4    (     0    $    !          4 !  %     0    4   !-0T]3      X   \"(\"@  !@    @    1   "
+    "       $          0 $ $U#3U,!    #0   $9I;&57<F%P<&5R7U\\    .    2 H   8    (     0         %    \"     H    !   "
+    "  0         .    \" (   8    (    \"0         %    \"    -@!   !     0         \"    V $   (    -    L    /    #P "
+    "   4 $  +@!  #8 0            !'<F]U<', 3F%M90!3:6=N86QS %A$871A %E$871A %-I9U-U:71E4VEG;F%L %5S97)$871A %1I;65286Y"
+    "G90!3:6=3=6ET94=R;W5P $%C=&EV95-I9VYA; !297%U:7)E;65N=$EN9F\\ 4VEG4W5I=&4 06-T:79E1W)O=7                          "
+    "           &                    \"0                    P                                               ,          "
+    "          !     P    (                    \"     @    $                    #     0               0    $    !    !@"
+    "    ,    \"     0         #     0    0    (     0    4    #     @    $    !    !     $    \"    !0    $    #      "
+    "                                         .          X    X    !@    @    $          4    (     0    <    !        "
+    " !     '    1W)O=7 @,0 .    .     8    (    !          %    \"     $    (     0         0    \"    %1H<F]T=&QE#@  "
+    " *@    &    \"     8         !0    @    !    #P    $         \"0   '@              )J9F9F9F=D_9V9F9F9F]C\\T,S,S,S,"
+    "#0&=F9F9F9@9 -#,S,S,S\"T!G9F9F9F8.0)J9F9F9F1% -#,S,S,S%T         <0        \"! FIF9F9F9(T         H0&=F9F9F9BI    "
+    "     +$ .    J     8    (    !@         %    \"     $    /     0         )    >    )J9F9F9F<D_        )$#-S,S,S(Q6"
+    "0       @%9 FIF9F9F9R3^:F9F9F9G)/\\W,S,S,C%9 FIF9F9F9)T#-S,S,S,PF0&=F9F9F9CI 9V9F9F;F0T\":F9F9F1E$0&=F9F9F9D1     "
+    "                  X   !(    !@    @    -          4    (    !@    $    !          8    8        W0(    !     0    "
+    ",    !    #@   $     &    \"     8         !0    @    !     @    $         \"0   !                       \"Q #@   "
+    "$@    &    \"     T         !0    @    &     0    $         !@   !@       #= @    $    !     @    (    .    . 4   "
+    "8    (     0         %    \"     0    !     0         .    .     8    (     @         %    \"     $          0    "
+    "     %  0  0    $         #@   $ !   &    \"     (         !0    @    !     0    $         !0 $  D    !    )    $Y"
+    "A;64      %A$871A     %E$871A     %5S97)$871A       .    ,     8    (    !          %    \"                0      "
+    "   0          X    P    !@    @    &          4    (               !          D         #@   #     &    \"     8  "
+    "       !0    @               $         \"0         .    ,     8    (    !@         %    \"                0       "
+    "  )          X    0 @  !@    @    \"          4    (     0    $    !          4 !  0     0   &    !.86UE          "
+    "      4VEG;F%L<P           $%C=&EV95-I9VYA;     !297%U:7)E;65N=$EN9F\\ 57-E<D1A=&$          %1I;65286YG90         "
+    ".    ,     8    (    !          %    \"                0         0          X   !(    !@    @    -          4    ("
+    "    !0    $    !          8    4        W0(               $         #@   #     &    \"     8         !0    @      "
+    "         $         \"0         .    ,     8    (    !          %    \"                0         0          X    P "
+    "   !@    @    &          4    (               !          D         #@   $     &    \"     8         !0    @    !  "
+    "   @    $         \"0   !                       \"1 #@   &@!   &    \"     (         !0    @    !     0    $      "
+    "   !0 $  P    !    ,    $YA;64          $=R;W5P<P       $%C=&EV94=R;W5P %5S97)$871A      X    P    !@    @    $   "
+    "       4    (               !         !          #@   $@    &    \"     T         !0    @    %     0    $         "
+    "!@   !0       #= @               @         .    .     8    (    !@         %    \"     $    !     0         )    \""
+    "            / _#@   #     &    \"     8         !0    @               $         \"0         .    B     8    (    \""
+    "0         %    \"     $   !8     0         \"    6      !24T     #@   $@    &    \"     (         !0    @    !    "
+    " 0    $         !0 $  4    !    !0   $U#3U,     #@         "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    N ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
+    "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
+    "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
+    "     #@   #     &    \"     8         !0    @               $         \"0         .    ,     8    (    !@         "
+    "%    \"                0         )          X    X    !@    @    &          4    (     0    $    !          D    ("
+    "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
+    "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
+    "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
+    "   \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"           "
+    "     0         )          X    P    !@    @    &          4    (               !          D         #@   #     &  "
+    "  \"     8         !0    @               $         \"0         "
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:20
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "motorsteuerung"
+    created		    "18-Feb-2003 15:25:01"
+    isLibrary		    0
+    firstTarget		    93
+    sfVersion		    76014001.0015
+  }
+  chart {
+    id			    2
+    name		    "Engine Controller"
+    windowPosition	    [-97 -1176 1607 1160]
+    viewLimits		    [0 1246 0 602]
+    zoomFactor		    1.333
+    screen		    [1 1 1280 800 1.333333333333333]
+    viewObj		    2
+    visible		    1
+    machine		    1
+    subviewS {
+      zoomFactor	      1.25
+    }
+    ssIdHighWaterMark	    179
+    decomposition	    SET_CHART
+    firstEvent		    12
+    firstData		    3
+    chartFileNumber	    1
+    executeAtInitialization 1
+    disableImplicitCasting  1
+    supportVariableSizing   0
+  }
+  data {
+    id			    3
+    ssIdNumber		    1
+    name		    "Major_Mark"
+    linkNode		    [2 0 4]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    4
+    ssIdNumber		    2
+    name		    "Minor_Mark"
+    linkNode		    [2 3 5]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    5
+    ssIdNumber		    3
+    name		    "Ignite1"
+    linkNode		    [2 4 6]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    6
+    ssIdNumber		    4
+    name		    "Ignite2"
+    linkNode		    [2 5 7]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    7
+    ssIdNumber		    5
+    name		    "Ignite3"
+    linkNode		    [2 6 8]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    8
+    ssIdNumber		    6
+    name		    "Ignite4"
+    linkNode		    [2 7 9]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    9
+    ssIdNumber		    7
+    name		    "RPM"
+    linkNode		    [2 8 10]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+      }
+      initialValue	      "1000"
+      type {
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    10
+    ssIdNumber		    8
+    name		    "Adv"
+    linkNode		    [2 9 11]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+      }
+      initialValue	      "0"
+      type {
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    11
+    ssIdNumber		    49
+    name		    "position"
+    linkNode		    [2 10 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+	maximum			"720"
+      }
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+    loggingInfo {
+      logName		      "position"
+      signalName	      "position"
+    }
+  }
+  event {
+    id			    12
+    ssIdNumber		    9
+    name		    "clk"
+    linkNode		    [2 0 0]
+    scope		    INPUT_EVENT
+    trigger		    RISING_EDGE_EVENT
+    machine		    1
+  }
+  instance {
+    id			    13
+    name		    "Engine Controller"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    14
+    name		    "Engine/Ignition System/Create Ignition Signals/Chart"
+    windowPosition	    [-97 -1176 1607 1160]
+    viewLimits		    [0 10 0 10]
+    screen		    [1 1 1280 800 1.333333333333333]
+    treeNode		    [0 15 0 0]
+    viewObj		    31
+    machine		    1
+    ssIdHighWaterMark	    95
+    decomposition	    SET_CHART
+    firstData		    79
+    chartFileNumber	    2
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+  }
+  state {
+    id			    15
+    labelString		    "Cylinder1"
+    position		    [40.375 21.375 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [14 19 0 21]
+    firstTransition	    40
+    firstJunction	    39
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    14
+    subviewS {
+      x1		      20
+      y1		      20.842
+      pos		      [35 31 738.375 434.184]
+    }
+    ssIdNumber		    1
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    1
+    firstData		    38
+  }
+  state {
+    id			    16
+    labelString		    "Pre_Ignite"
+    position		    [43.5 184.9815 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [15 0 17 37]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    2
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    17
+    labelString		    "WaitForIgnition /\nentry: adiabatic1 = 0+pi*15/180*ml('rand');"
+    position		    [364.0228 180.0836 373.4941 67.3761]
+    fontSize		    12
+    chart		    14
+    treeNode		    [15 0 19 16]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    3
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    18
+    labelString		    "Post_Ignite"
+    position		    [428.1117 391.1294 220.8469 42.4997]
+    fontSize		    12
+    chart		    14
+    treeNode		    [15 0 36 0]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    19
+    labelString		    "Note: CrankPos is normalized to 0 ... 4*pi"
+    position		    [390.7353 133.429 176.918 17.2251]
+    chart		    14
+    treeNode		    [15 0 0 17]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    5
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    20
+    labelString		    "normangle = normalize(angle)"
+    position		    [43.6984 105.9919 176.6031 41.5163]
+    fontSize		    12
+    chart		    14
+    treeNode		    [14 0 26 0]
+    firstTransition	    55
+    firstJunction	    48
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    14
+    subviewS {
+      x1		      20
+      y1		      20
+      pos		      [35 35 609.101 308.685]
+    }
+    ssIdNumber		    31
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    firstData		    46
+  }
+  state {
+    id			    21
+    labelString		    "Cylinder2"
+    position		    [149.375 23.625 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [14 22 15 31]
+    firstTransition	    65
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    14
+    subviewS {
+      x1		      20.145
+      y1		      20.626
+      zoomFactor	      1.257
+      pos		      [39 35 804.25 542.559]
+    }
+    ssIdNumber		    57
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    2
+    firstData		    64
+  }
+  state {
+    id			    22
+    labelString		    "Note: CrankPos is normalized to 0 ... 4*pi"
+    position		    [394.7353 137.429 176.918 17.2251]
+    chart		    14
+    treeNode		    [21 0 0 23]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    62
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    23
+    labelString		    "WaitForIgnition /\nentry: adiabatic2 = pi+pi*15/180*ml('rand');"
+    position		    [368.0228 184.0836 373.4941 67.3761]
+    fontSize		    12
+    chart		    14
+    treeNode		    [21 0 22 24]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    63
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    24
+    labelString		    "Pre_Ignite"
+    position		    [63.218 187.9428 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [21 0 23 25]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    64
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    25
+    labelString		    "Post_Ignite"
+    position		    [409.4867 394.0044 220.8469 42.4997]
+    fontSize		    12
+    chart		    14
+    treeNode		    [21 0 24 0]
+    visible		    0
+    subviewer		    21
+    ssIdNumber		    65
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    26
+    labelString		    "Cylinder3"
+    position		    [254.5 25.5 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [14 27 31 20]
+    firstTransition	    70
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    14
+    subviewS {
+      x1		      20
+      y1		      20
+      pos		      [35 35 804.25 542.559]
+    }
+    ssIdNumber		    66
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    3
+    firstData		    69
+  }
+  state {
+    id			    27
+    labelString		    "Note: CrankPos is normalized to 0 ... 4*pi"
+    position		    [390.7353 137.429 176.918 17.2251]
+    chart		    14
+    treeNode		    [26 0 0 28]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    visible		    0
+    subviewer		    26
+    ssIdNumber		    71
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    28
+    labelString		    "WaitForIgnition /\nentry: adiabatic3 = normalize(pi*2+pi*15/180*ml('rand'));"
+    position		    [364.0228 184.0836 373.4941 67.3761]
+    fontSize		    12
+    chart		    14
+    treeNode		    [26 0 27 29]
+    visible		    0
+    subviewer		    26
+    ssIdNumber		    72
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    29
+    labelString		    "Pre_Ignite"
+    position		    [40.5 188.2315 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [26 0 28 30]
+    visible		    0
+    subviewer		    26
+    ssIdNumber		    73
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    30
+    labelString		    "Post_Ignite"
+    position		    [405.4867 394.0044 220.8469 42.4997]
+    fontSize		    12
+    chart		    14
+    treeNode		    [26 0 29 0]
+    visible		    0
+    subviewer		    26
+    ssIdNumber		    74
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    31
+    labelString		    "Cylinder4"
+    position		    [373.125 25.125 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [14 32 21 26]
+    firstTransition	    75
+    superState		    SUBCHART
+    subviewer		    14
+    subviewS {
+      pos		      [79 79 804.25 542.559]
+    }
+    ssIdNumber		    75
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    4
+    firstData		    74
+  }
+  state {
+    id			    32
+    labelString		    "Note: CrankPos is normalized to 0 ... 4*pi"
+    position		    [434.7353 181.429 176.918 17.2251]
+    chart		    14
+    treeNode		    [31 0 0 33]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    subviewer		    31
+    ssIdNumber		    80
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    33
+    labelString		    "WaitForIgnition /\nentry: adiabatic4 = normalize(pi*3+pi*15/180*ml('rand'));"
+    position		    [408.0228 228.0836 373.4941 67.3761]
+    fontSize		    12
+    chart		    14
+    treeNode		    [31 0 32 34]
+    subviewer		    31
+    ssIdNumber		    81
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    34
+    labelString		    "Pre_Ignite"
+    position		    [86 232.2315 90 60]
+    fontSize		    12
+    chart		    14
+    treeNode		    [31 0 33 35]
+    subviewer		    31
+    ssIdNumber		    82
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    35
+    labelString		    "Post_Ignite"
+    position		    [440.6117 434.6294 234.4719 42.8747]
+    fontSize		    12
+    chart		    14
+    treeNode		    [31 0 34 0]
+    subviewer		    31
+    ssIdNumber		    83
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    36
+    labelString		    "Ignition after 0"
+    position		    [436.125 313.375 66.7213 17.2251]
+    chart		    14
+    treeNode		    [15 0 37 18]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    90
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    37
+    labelString		    "Ignition before 0"
+    position		    [573.625 311.875 74.9673 17.2251]
+    chart		    14
+    treeNode		    [15 0 16 36]
+    superState		    GROUPED
+    isNoteBox		    1
+    noteBox		    [0 0 0 1]
+    visible		    0
+    subviewer		    15
+    ssIdNumber		    91
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  data {
+    id			    38
+    ssIdNumber		    54
+    name		    "adiabatic1"
+    linkNode		    [15 0 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  junction {
+    id			    39
+    position		    [541 322 7]
+    chart		    14
+    linkNode		    [15 0 0]
+    visible		    0
+    subviewer		    15
+    quantum		    [43 0 0 0]
+    ssIdNumber		    87
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    40
+    labelPosition	    [113.853 147.023 8.246 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 86.625 147.625 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [1 0 -1 0.4792 86.625 184.9815 0 0]
+    }
+    midPoint		    [86.625 162.8546]
+    chart		    14
+    linkNode		    [15 0 41]
+    visible		    0
+    dataLimits		    [84.225 89.025 147.625 184.982]
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    25
+  }
+  transition {
+    id			    41
+    labelString		    "[(CrankPos>= 3*pi)]"
+    labelPosition	    [177.278 193.896 104.949 14.971]
+    fontSize		    12
+    src {
+      id		      16
+      intersection	      [2 1 0 0.4547 133.5 212.2635 0 -2.7174]
+    }
+    dst {
+      id		      17
+      intersection	      [4 -1 0 0.5224 364.0228 212.2635 0 2.7174]
+    }
+    midPoint		    [249.5121 212.2635]
+    chart		    14
+    linkNode		    [15 40 42]
+    visible		    0
+    dataLimits		    [133.5 364.023 209.863 214.664]
+    stampAngle		    NaN
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    26
+  }
+  transition {
+    id			    42
+    labelString		    "[(CrankPos>= pi) && (CrankPos <= pi+1)]"
+    labelPosition	    [70.984 406.014 218.894 14.971]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [4 -1 0 0.4743 428.1117 413.4715 0 -22.3421]
+    }
+    dst {
+      id		      16
+      intersection	      [3 0 1 0.7195 68.745 244.9815 0 64.755]
+    }
+    midPoint		    [189.351 379.6687]
+    chart		    14
+    linkNode		    [15 41 43]
+    visible		    0
+    dataLimits		    [66.345 428.112 244.982 413.951]
+    stampAngle		    -0.0929
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      -22.341
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    28
+  }
+  transition {
+    id			    43
+    labelString		    "[(CrankPos >= adiabatic1 && CrankPos <= 0 + pi*15/180) || IgniteCmd1] /"
+    labelPosition	    [358.679 269.552 383.814 14.971]
+    fontSize		    12
+    src {
+      id		      17
+      intersection	      [3 0 1 0.5262 541 247.4597 0 -67]
+    }
+    dst {
+      id		      39
+      intersection	      [1 0 -1 0 541 315 0 64.6]
+    }
+    midPoint		    [541 278.4374]
+    chart		    14
+    linkNode		    [15 42 44]
+    visible		    0
+    dataLimits		    [538.6 543.4 247.46 315]
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    27
+  }
+  transition {
+    id			    44
+    labelString		    "[CrankPos < pi]/\nAdvanceAngle = -CrankPos;"
+    labelPosition	    [381.875 345.625 149.178 28.444]
+    fontSize		    12
+    src {
+      id		      39
+      intersection	      [3 -0.6718 0.7407 0 536.2973 327.185 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [1 0 -1 0.2429 481.75 391.1294 0 0]
+    }
+    midPoint		    [500.5075 353.4678]
+    chart		    14
+    linkNode		    [15 43 45]
+    visible		    0
+    dataLimits		    [479.35 536.297 327.185 391.129]
+    stampAngle		    -0.7367
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      -59.25
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    88
+  }
+  transition {
+    id			    45
+    labelString		    "[CrankPos >= pi]/\nAdvanceAngle = 4*pi-CrankPos;"
+    labelPosition	    [559.125 344.875 170.168 28.444]
+    fontSize		    12
+    src {
+      id		      39
+      intersection	      [3 0.5657 0.8246 0 544.96 327.7722 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [1 0 -1 0.7183 586.75 391.1294 0 0]
+    }
+    midPoint		    [572.3409 354.8427]
+    chart		    14
+    linkNode		    [15 44 0]
+    visible		    0
+    dataLimits		    [544.96 589.15 327.772 391.129]
+    stampAngle		    0.6013
+    subviewer		    15
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      45.75
+    }
+    executionOrder	    2
+    ssIdNumber		    89
+  }
+  data {
+    id			    46
+    ssIdNumber		    29
+    name		    "angle"
+    linkNode		    [20 0 47]
+    scope		    FUNCTION_INPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    47
+    ssIdNumber		    30
+    name		    "normangle"
+    linkNode		    [20 46 0]
+    scope		    FUNCTION_OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  junction {
+    id			    48
+    position		    [204.375 153.3778 7]
+    chart		    14
+    linkNode		    [20 0 49]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    32
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    49
+    position		    [312 153.3778 7]
+    chart		    14
+    linkNode		    [20 48 50]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    33
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    50
+    position		    [419.75 153.3778 7]
+    chart		    14
+    linkNode		    [20 49 51]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    34
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    51
+    position		    [204.375 222.7528 7]
+    chart		    14
+    linkNode		    [20 50 52]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    35
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    52
+    position		    [312.125 222.7528 7]
+    chart		    14
+    linkNode		    [20 51 53]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    36
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    53
+    position		    [419.75 222.7528 7]
+    chart		    14
+    linkNode		    [20 52 54]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    37
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    54
+    position		    [312.25 262.1278 7]
+    chart		    14
+    linkNode		    [20 53 0]
+    visible		    0
+    subviewer		    20
+    ssIdNumber		    38
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    55
+    labelString		    "/*normalize the angle to [0,4*pi)*/"
+    labelPosition	    [316.472 114.347 170.168 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 312 106.75 0 0]
+    }
+    dst {
+      id		      49
+      intersection	      [1 -0 -1 0 312 146.3778 0 0]
+    }
+    midPoint		    [312 123.1647]
+    chart		    14
+    linkNode		    [20 0 56]
+    visible		    0
+    dataLimits		    [309.6 314.4 106.75 146.378]
+    subviewer		    20
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    39
+  }
+  transition {
+    id			    56
+    labelString		    "[angle  < 0]"
+    labelPosition	    [236.625 136.625 58.472 14.971]
+    fontSize		    12
+    src {
+      id		      49
+      intersection	      [4 -1 0 0 305 153.3778 0 0]
+    }
+    dst {
+      id		      48
+      intersection	      [2 1 0 0 211.375 153.3778 0 0]
+    }
+    midPoint		    [260.4129 153.3778]
+    chart		    14
+    linkNode		    [20 55 57]
+    visible		    0
+    dataLimits		    [211.375 305 150.978 155.778]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    40
+  }
+  transition {
+    id			    57
+    labelString		    "[angle >= 4*pi]"
+    labelPosition	    [339.673 133.878 76.463 14.971]
+    fontSize		    12
+    src {
+      id		      49
+      intersection	      [2 1 0 0 319 153.3778 0 0]
+    }
+    dst {
+      id		      50
+      intersection	      [4 -1 0 0 412.75 153.3778 0 0]
+    }
+    midPoint		    [363.6523 153.3778]
+    chart		    14
+    linkNode		    [20 56 58]
+    visible		    0
+    dataLimits		    [319 412.75 150.978 155.778]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    41
+  }
+  transition {
+    id			    58
+    labelString		    "{normangle = angle+4*pi;}"
+    labelPosition	    [112.25 182 135.684 14.971]
+    fontSize		    12
+    src {
+      id		      48
+      intersection	      [3 0 1 0 204.375 160.3778 0 0]
+    }
+    dst {
+      id		      51
+      intersection	      [1 0 -1 0 204.375 215.7528 0 0]
+    }
+    midPoint		    [204.375 185.0084]
+    chart		    14
+    linkNode		    [20 57 59]
+    visible		    0
+    dataLimits		    [201.975 206.775 160.378 215.753]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    42
+  }
+  transition {
+    id			    59
+    labelString		    "{normangle = angle-4*pi;}"
+    labelPosition	    [375.5 183.378 132.686 14.971]
+    fontSize		    12
+    src {
+      id		      50
+      intersection	      [3 0 1 0 419.75 160.3778 0 0]
+    }
+    dst {
+      id		      53
+      intersection	      [1 0 -1 0 419.75 215.7528 0 0]
+    }
+    midPoint		    [419.75 185.0084]
+    chart		    14
+    linkNode		    [20 58 60]
+    visible		    0
+    dataLimits		    [417.35 422.15 160.378 215.753]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    43
+  }
+  transition {
+    id			    60
+    labelString		    "{normangle=angle;}"
+    labelPosition	    [261.64 183.068 101.951 14.971]
+    fontSize		    12
+    src {
+      id		      49
+      intersection	      [3 0.0018 1 0 312.0126 160.3778 0 0]
+    }
+    dst {
+      id		      52
+      intersection	      [1 -0.0018 -1 0 312.1124 215.7528 0 0]
+    }
+    midPoint		    [312.057 185.0084]
+    chart		    14
+    linkNode		    [20 59 61]
+    visible		    0
+    dataLimits		    [309.698 314.498 160.378 215.753]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    3
+    ssIdNumber		    44
+  }
+  transition {
+    id			    61
+    labelPosition	    [263.156 222.753 8.246 14.971]
+    fontSize		    12
+    src {
+      id		      51
+      intersection	      [2 1 0 0 211.375 222.7528 0 0]
+    }
+    dst {
+      id		      52
+      intersection	      [4 -1 0 0 305.125 222.7528 0 0]
+    }
+    midPoint		    [256.0273 222.7528]
+    chart		    14
+    linkNode		    [20 60 62]
+    visible		    0
+    dataLimits		    [211.375 305.125 220.353 225.153]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    45
+  }
+  transition {
+    id			    62
+    labelPosition	    [361.457 222.753 8.246 14.971]
+    fontSize		    12
+    src {
+      id		      53
+      intersection	      [4 -1 0 0 412.75 222.7528 0 0]
+    }
+    dst {
+      id		      52
+      intersection	      [2 1 0 0 319.125 222.7528 0 0]
+    }
+    midPoint		    [368.1629 222.7528]
+    chart		    14
+    linkNode		    [20 61 63]
+    visible		    0
+    dataLimits		    [319.125 412.75 220.353 225.153]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    46
+  }
+  transition {
+    id			    63
+    labelPosition	    [312.179 239.915 8.246 14.971]
+    fontSize		    12
+    src {
+      id		      52
+      intersection	      [3 0.0032 1 0 312.1474 229.7528 0 0]
+    }
+    dst {
+      id		      54
+      intersection	      [1 -0.0032 -1 0 312.2276 255.1278 0 0]
+    }
+    midPoint		    [312.1757 238.7312]
+    chart		    14
+    linkNode		    [20 62 0]
+    visible		    0
+    dataLimits		    [309.802 314.602 229.753 255.128]
+    subviewer		    20
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    47
+  }
+  data {
+    id			    64
+    ssIdNumber		    92
+    name		    "adiabatic2"
+    linkNode		    [21 0 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  transition {
+    id			    65
+    labelPosition	    [77.776 134.522 8.481 16.936]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 73.1733 124.7113 0 0]
+    }
+    dst {
+      id		      24
+      intersection	      [1 0 -1 0.1106 73.172 187.9428 0 0]
+    }
+    midPoint		    [73.1733 153.4409]
+    chart		    14
+    linkNode		    [21 0 66]
+    visible		    0
+    dataLimits		    [70.772 75.572 124.711 187.943]
+    subviewer		    21
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    58
+  }
+  transition {
+    id			    66
+    labelString		    "[(CrankPos>= 0) && (CrankPos <= pi)]"
+    labelPosition	    [155.13 194.397 213.901 16.936]
+    fontSize		    12
+    src {
+      id		      24
+      intersection	      [2 1 0 0.4547 153.218 215.2248 0 -2.7174]
+    }
+    dst {
+      id		      23
+      intersection	      [4 -1 0 0.5378 368.0228 215.2248 0 2.7174]
+    }
+    midPoint		    [261.0293 215.2248]
+    chart		    14
+    linkNode		    [21 65 67]
+    visible		    0
+    dataLimits		    [153.218 368.023 212.825 217.625]
+    stampAngle		    NaN
+    subviewer		    21
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    59
+  }
+  transition {
+    id			    67
+    labelString		    "[(CrankPos>= 2*pi) && CrankPos <= 2*pi+1]"
+    labelPosition	    [69.369 343.576 245.939 16.936]
+    fontSize		    12
+    src {
+      id		      25
+      intersection	      [4 -1 0 0.4743 409.4867 416.3465 0 -22.3421]
+    }
+    dst {
+      id		      24
+      intersection	      [3 0 1 0.7195 88.463 247.9428 0 64.755]
+    }
+    midPoint		    [195.2512 378.1124]
+    chart		    14
+    linkNode		    [21 66 68]
+    visible		    0
+    dataLimits		    [86.063 409.487 247.943 416.374]
+    stampAngle		    -0.0929
+    subviewer		    21
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      -22.341
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    60
+  }
+  transition {
+    id			    68
+    labelString		    "[((CrankPos >= adiabatic2) && (CrankPos <= pi + pi*15/180)) || IgniteCmd2] /\nAdvanceAngle = pi "
+    "- CrankPos;"
+    labelPosition	    [333.491 261.528 422.148 31.991]
+    fontSize		    12
+    src {
+      id		      23
+      intersection	      [3 0 1 0.6309 505.8643 251.4597 0 -67]
+    }
+    dst {
+      id		      25
+      intersection	      [1 -0 -1 0.4364 505.8643 394.0044 0 64.6]
+    }
+    midPoint		    [505.0501 321.6683]
+    chart		    14
+    linkNode		    [21 67 0]
+    visible		    0
+    dataLimits		    [503.464 508.264 251.46 394.004]
+    stampAngle		    -5.6369
+    subviewer		    21
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    61
+  }
+  data {
+    id			    69
+    ssIdNumber		    93
+    name		    "adiabatic3"
+    linkNode		    [26 0 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  transition {
+    id			    70
+    labelPosition	    [64.183 135.936 8.246 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 50.4553 125 0 0]
+    }
+    dst {
+      id		      29
+      intersection	      [1 0 -1 0.1106 50.454 188.2315 0 0]
+    }
+    midPoint		    [50.4553 153.7296]
+    chart		    14
+    linkNode		    [26 0 71]
+    visible		    0
+    dataLimits		    [48.054 52.854 125 188.232]
+    subviewer		    26
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    67
+  }
+  transition {
+    id			    71
+    labelString		    "[(CrankPos>= pi) && (CrankPos<=2*pi)]"
+    labelPosition	    [142.155 198.646 210.648 14.971]
+    fontSize		    12
+    src {
+      id		      29
+      intersection	      [2 1 0 0.4547 130.5 215.5135 0 -2.7174]
+    }
+    dst {
+      id		      28
+      intersection	      [4 -1 0 0.5335 364.0228 215.5135 0 2.7174]
+    }
+    midPoint		    [248.0773 215.5135]
+    chart		    14
+    linkNode		    [26 70 72]
+    visible		    0
+    dataLimits		    [130.5 364.023 213.114 217.914]
+    stampAngle		    NaN
+    subviewer		    26
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    68
+  }
+  transition {
+    id			    72
+    labelString		    "[(CrankPos>= 3*pi) && CrankPos <= 3*pi+1]"
+    labelPosition	    [107.893 352.469 233.887 14.971]
+    fontSize		    12
+    src {
+      id		      30
+      intersection	      [4 -1 0 0.4743 405.4867 416.3465 0 -22.3421]
+    }
+    dst {
+      id		      29
+      intersection	      [3 0 1 0.7195 65.745 248.2315 0 64.755]
+    }
+    midPoint		    [179.3075 380.4204]
+    chart		    14
+    linkNode		    [26 71 73]
+    visible		    0
+    dataLimits		    [63.345 405.487 248.232 416.346]
+    stampAngle		    -0.0929
+    subviewer		    26
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      -22.341
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    69
+  }
+  transition {
+    id			    73
+    labelString		    "[((CrankPos >= adiabatic3) && (CrankPos <= pi*2 + pi*15/180)) || IgniteCmd3] /\nAdvanceAngle = p"
+    "i*2 - CrankPos;"
+    labelPosition	    [329.491 261.528 413.05 28.444]
+    fontSize		    12
+    src {
+      id		      28
+      intersection	      [3 0 1 0.6309 501.8643 251.4597 0 -67]
+    }
+    dst {
+      id		      30
+      intersection	      [1 -0 -1 0.4364 501.8643 394.0044 0 64.6]
+    }
+    midPoint		    [501.0501 321.6683]
+    chart		    14
+    linkNode		    [26 72 0]
+    visible		    0
+    dataLimits		    [499.464 504.264 251.46 394.004]
+    stampAngle		    -5.6369
+    subviewer		    26
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    70
+  }
+  data {
+    id			    74
+    ssIdNumber		    94
+    name		    "adiabatic4"
+    linkNode		    [31 0 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  transition {
+    id			    75
+    labelPosition	    [100.558 178.811 8.246 14.971]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 95.9553 169 0 0]
+    }
+    dst {
+      id		      34
+      intersection	      [1 0 -1 0.1106 95.954 232.2315 0 0]
+    }
+    midPoint		    [95.9553 197.7296]
+    chart		    14
+    linkNode		    [31 0 76]
+    dataLimits		    [93.554 98.354 169 232.232]
+    subviewer		    31
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    76
+  }
+  transition {
+    id			    76
+    labelString		    "[(CrankPos>= 2*pi) && (CrankPos <= 3*pi)]"
+    labelPosition	    [178.827 243.021 227.89 14.971]
+    fontSize		    12
+    src {
+      id		      34
+      intersection	      [2 1 0 0.4547 176 259.5135 0 -2.7174]
+    }
+    dst {
+      id		      33
+      intersection	      [4 -1 0 0.5335 408.0228 259.5135 0 2.7174]
+    }
+    midPoint		    [292.7947 259.5135]
+    chart		    14
+    linkNode		    [31 75 77]
+    dataLimits		    [176 408.023 257.113 261.914]
+    stampAngle		    NaN
+    subviewer		    31
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    77
+  }
+  transition {
+    id			    77
+    labelString		    "[(CrankPos>= 0) && (CrankPos <= 1)]"
+    labelPosition	    [131.123 385.922 199.403 14.971]
+    fontSize		    12
+    src {
+      id		      35
+      intersection	      [4 -1 0 0.4789 440.6117 456.9715 0 -22.3421]
+    }
+    dst {
+      id		      34
+      intersection	      [3 0 1 0.7195 111.245 292.2315 0 64.755]
+    }
+    midPoint		    [221.246 421.4378]
+    chart		    14
+    linkNode		    [31 76 78]
+    dataLimits		    [108.845 440.612 292.232 457.116]
+    stampAngle		    -0.0929
+    subviewer		    31
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+      arcL		      -22.341
+      arcClockDir	      COUNTER_CLOCKWISE
+    }
+    executionOrder	    1
+    ssIdNumber		    78
+  }
+  transition {
+    id			    78
+    labelString		    "[((CrankPos >= adiabatic4) && (CrankPos <= 3*pi + pi*15/180)) || IgniteCmd4] /\nAdvanceAngle = p"
+    "i*3 - CrankPos;"
+    labelPosition	    [365.358 304.621 413.05 28.444]
+    fontSize		    12
+    src {
+      id		      33
+      intersection	      [3 0 1 0.6547 536.9893 295.4597 0 -67]
+    }
+    dst {
+      id		      35
+      intersection	      [1 -0 -1 0.411 536.9893 434.6294 0 64.6]
+    }
+    midPoint		    [536.9893 363.8093]
+    chart		    14
+    linkNode		    [31 77 0]
+    dataLimits		    [534.589 539.389 295.46 434.629]
+    stampAngle		    -5.6369
+    subviewer		    31
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    79
+  }
+  data {
+    id			    79
+    ssIdNumber		    48
+    name		    "AdvanceAngle"
+    linkNode		    [14 0 80]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      initialValue	      "0"
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    80
+    ssIdNumber		    50
+    name		    "CrankPos"
+    linkNode		    [14 79 81]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    81
+    ssIdNumber		    53
+    name		    "IgniteCmd1"
+    linkNode		    [14 80 82]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    82
+    ssIdNumber		    56
+    name		    "pi"
+    linkNode		    [14 81 83]
+    scope		    CONSTANT_DATA
+    machine		    1
+    props {
+      initialValue	      "3.14159265"
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    83
+    ssIdNumber		    84
+    name		    "IgniteCmd2"
+    linkNode		    [14 82 84]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    84
+    ssIdNumber		    85
+    name		    "IgniteCmd3"
+    linkNode		    [14 83 85]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    85
+    ssIdNumber		    86
+    name		    "IgniteCmd4"
+    linkNode		    [14 84 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    86
+    name		    "Engine/Ignition System/Create Ignition Signals/Chart"
+    machine		    1
+    chart		    14
+  }
+  chart {
+    id			    87
+    name		    "Throttle Control"
+    windowPosition	    [18.75 -312.25 1226 856]
+    viewLimits		    [0 1145.625 0 633.75]
+    zoomFactor		    1.25
+    screen		    [1 1 1280 800 1.333333333333333]
+    viewObj		    87
+    machine		    1
+    subviewS {
+      zoomFactor	      1.25
+    }
+    ssIdHighWaterMark	    58
+    decomposition	    CLUSTER_CHART
+    firstEvent		    91
+    firstData		    88
+    chartFileNumber	    3
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+  }
+  data {
+    id			    88
+    ssIdNumber		    1
+    name		    "RPM"
+    linkNode		    [87 0 89]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    89
+    ssIdNumber		    2
+    name		    "TargetRPM"
+    linkNode		    [87 88 90]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    90
+    ssIdNumber		    3
+    name		    "Throttle"
+    linkNode		    [87 89 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+	maximum			"90"
+      }
+      initialValue	      "0"
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  event {
+    id			    91
+    ssIdNumber		    15
+    name		    "clk"
+    linkNode		    [87 0 0]
+    scope		    INPUT_EVENT
+    trigger		    RISING_EDGE_EVENT
+    machine		    1
+  }
+  instance {
+    id			    92
+    name		    "Throttle Control"
+    machine		    1
+    chart		    87
+  }
+  target {
+    id			    93
+    name		    "sfun"
+    codeFlags		    ""
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
