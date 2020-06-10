@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.294"
+    ComputedModelVersion    "1.295"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -106,9 +106,9 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-10.091098586703209, 222.52]
-	  SceneRectInView	  [-10.091098586703209, 222.52, 1505.6, 651.2]
+	  ZoomFactor		  [0.6]
+	  Offset		  [-598.83871763432239, 3.6100300373282153]
+	  SceneRectInView	  [-598.83871763432239, 3.6100300373282153, 3136.666666666667, 1356.6666666666667]
 	}
 	Object {
 	  $ObjectID		  6
@@ -117,9 +117,9 @@ Model {
 	  ViewObjType		  "StateflowChart"
 	  LoadSaveID		  "41"
 	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-45.756307027563935, 1272.6558316795872]
-	  SceneRectInView	  [-45.756307027563935, 1272.6558316795872, 1254.6666666666667, 542.66666666666663]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-103.90056678853486, 1275.8769500260078]
+	  SceneRectInView	  [-103.90056678853486, 1275.8769500260078, 1505.6, 651.2]
 	}
 	Object {
 	  $ObjectID		  7
@@ -203,11 +203,11 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Robin Vogt"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jun 10 13:41:00 2020"
-  RTWModifiedTimeStamp	  513696297
+  LastModifiedDate	  "Wed Jun 10 15:10:42 2020"
+  RTWModifiedTimeStamp	  513701031
   ModifiedHistory	  "Original Modell stammt von Martin Fränzle, Universität Oldenburg.\nErweiterung durch Stefan Disch"
   ", Universität Freiburg"
-  ModelVersionFormat	  "1.%<AutoIncrement:294>"
+  ModelVersionFormat	  "1.%<AutoIncrement:295>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1482,9 +1482,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "531"
+    SIDHighWatermark	    "536"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      DiscretePulseGenerator
@@ -1516,6 +1516,14 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
+      BlockType		      Abs
+      Name		      "Abs2"
+      SID		      "532"
+      Position		      [1245, 610, 1275, 640]
+      ZOrder		      19
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
       BlockType		      Sum
       Name		      "Add"
       SID		      "527"
@@ -1532,6 +1540,16 @@ Model {
       Ports		      [2, 1]
       Position		      [1185, 697, 1215, 728]
       ZOrder		      15
+      IconShape		      "rectangular"
+      Inputs		      "-+"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add2"
+      SID		      "534"
+      Ports		      [2, 1]
+      Position		      [1185, 607, 1215, 638]
+      ZOrder		      17
       IconShape		      "rectangular"
       Inputs		      "-+"
     }
@@ -4807,7 +4825,7 @@ Model {
       SFBlockType	      "Chart"
       System {
 	Name			"Engine Controller"
-	Location		[-8, -8, 1928, 1048]
+	Location		[-1944, -2168, -8, -1112]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -5179,8 +5197,8 @@ Model {
       "8039215686 0.650980392156863],'Title','Current Ignition Angles','LinePropertiesCache',{{}},'UserDefinedChannelNa"
       "mes',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'TimeRangeSamples','5','TimeRangeFra"
       "mes','5'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomOut'),e"
-      "xtmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[-1205 -1869 -5"
-      "01 -1350],'VisibleAtModelOpen','on')"
+      "xtmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[-1935 -2084 -1"
+      "5 -1121],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -5274,8 +5292,8 @@ Model {
       "ition','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',t"
       "rue,'Placement',1),'DisplayLayoutDimensions',[5 1],'TimeRangeSamples','1','TimeRangeFrames','1'),extmgr.Configur"
       "ation('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','"
-      "Measurements',true,'Version','2020a')),'Version','2020a','Location',[-974 -2076 -15 -1121],'VisibleAtModelOpen',"
-      "'on')"
+      "Measurements',true,'Version','2020a')),'Version','2020a','Location',[-1935 -2084 -15 -1121],'VisibleAtModelOpen'"
+      ",'on')"
       NumInputPorts	      "5"
       Floating		      off
     }
@@ -5697,6 +5715,34 @@ Model {
       NumInputPorts	      "2"
       Floating		      off
     }
+    Block {
+      BlockType		      Scope
+      Name		      "absolute position Deviation"
+      SID		      "536"
+      Ports		      [1]
+      Position		      [1330, 608, 1360, 642]
+      ZOrder		      18
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-89.93478','MaxYLimReal','809.55334','YLabelReal','','MinYLim"
+      "Mag','0.00000','MaxYLimMag','809.55334','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'"
+      "AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
+      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0."
+      "831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921"
+      "5686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumL"
+      "ines',1,'LineNames',{{'Abs2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal'"
+      ",'-89.93478','MaxYLimReal','809.55334','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','809.55334','LegendVi"
+      "sibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980"
+      "3922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.4117647058823"
+      "53 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83137254901"
+      "9608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),'TimeRangeSamples','2','"
+      "TimeRangeFrames','2'),extmgr.Configuration('Tools','Plot Navigation',true,'AutoscaleMode','Updates'),extmgr.Conf"
+      "iguration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Position',[-1638 2578 1507 366],'Vi"
+      "sibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
     Line {
       ZOrder		      1
       SrcBlock		      "Engine Controller"
@@ -5799,14 +5845,6 @@ Model {
 	DstBlock		"Throttle Control"
 	DstPort			1
       }
-    }
-    Line {
-      ZOrder		      19
-      SrcBlock		      "Engine Controller"
-      SrcPort		      7
-      Points		      [-60, 0; 0, -125]
-      DstBlock		      "Mux1"
-      DstPort		      2
     }
     Line {
       ZOrder		      20
@@ -5996,9 +6034,19 @@ Model {
       ZOrder		      49
       SrcBlock		      "Engine"
       SrcPort		      1
-      Points		      [8, 0; 0, -64; -233, 0; 0, -306]
-      DstBlock		      "Mux1"
-      DstPort		      1
+      Points		      [7, 0]
+      Branch {
+	ZOrder			113
+	Points			[0, 30]
+	DstBlock		"Add2"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			112
+	Points			[1, 0; 0, -64; -233, 0; 0, -306]
+	DstBlock		"Mux1"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      50
@@ -6095,6 +6143,37 @@ Model {
       Points		      [16, 0; 0, 20]
       DstBlock		      "absolute RPM Deviation"
       DstPort		      1
+    }
+    Line {
+      ZOrder		      111
+      SrcBlock		      "Abs2"
+      SrcPort		      1
+      DstBlock		      "absolute position Deviation"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      110
+      SrcBlock		      "Add2"
+      SrcPort		      1
+      DstBlock		      "Abs2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      19
+      SrcBlock		      "Engine Controller"
+      SrcPort		      7
+      Points		      [-60, 0; 0, -125]
+      Branch {
+	ZOrder			116
+	Points			[0, -42; 556, 0; 0, 407]
+	DstBlock		"Add2"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			115
+	DstBlock		"Mux1"
+	DstPort			2
+      }
     }
     Annotation {
       SID		      "525"
@@ -6213,11 +6292,12 @@ Stateflow {
     machine		    1
     name		    "Engine Controller"
     windowPosition	    [-97 -1176 1607 1160]
-    viewLimits		    [-45.756 1208.91 1272.656 1815.322]
-    zoomFactor		    0.889
+    viewLimits		    [-103.901 1401.699 1275.877 1927.077]
+    zoomFactor		    1.067
     screen		    [1 1 1280 800 1.333333333333333]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
     subviewS {
       zoomFactor	      1.25
     }
@@ -6965,7 +7045,7 @@ Stateflow {
     }
     midPoint		    [426.7638 1589.8095]
     chart		    2
-    dataLimits		    [344.897 516.63 1587.409 1592.209]
+    dataLimits		    [344.897 516.63 1587.409 1592.21]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -7040,7 +7120,7 @@ Stateflow {
     }
     midPoint		    [434.7638 1761.7325]
     chart		    2
-    dataLimits		    [344.897 516.63 1759.332 1764.132]
+    dataLimits		    [344.897 516.63 1759.332 1764.133]
     subviewer		    2
     drawStyle		    SMART
     slide {
