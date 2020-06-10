@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.293"
+    ComputedModelVersion    "1.294"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -106,9 +106,9 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-387.75793752784489, 162.66763880695464]
-	  SceneRectInView	  [-387.75793752784489, 162.66763880695464, 2352.5, 1017.5]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-10.091098586703209, 222.52]
+	  SceneRectInView	  [-10.091098586703209, 222.52, 1505.6, 651.2]
 	}
 	Object {
 	  $ObjectID		  6
@@ -117,9 +117,9 @@ Model {
 	  ViewObjType		  "StateflowChart"
 	  LoadSaveID		  "41"
 	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-258.16604074780855, 1196.8688426062372]
-	  SceneRectInView	  [-258.16604074780855, 1196.8688426062372, 1505.6, 651.2]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-45.756307027563935, 1272.6558316795872]
+	  SceneRectInView	  [-45.756307027563935, 1272.6558316795872, 1254.6666666666667, 542.66666666666663]
 	}
 	Object {
 	  $ObjectID		  7
@@ -203,11 +203,11 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Robin Vogt"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jun 10 13:02:24 2020"
-  RTWModifiedTimeStamp	  513689978
+  LastModifiedDate	  "Wed Jun 10 13:41:00 2020"
+  RTWModifiedTimeStamp	  513696297
   ModifiedHistory	  "Original Modell stammt von Martin Fränzle, Universität Oldenburg.\nErweiterung durch Stefan Disch"
   ", Universität Freiburg"
-  ModelVersionFormat	  "1.%<AutoIncrement:293>"
+  ModelVersionFormat	  "1.%<AutoIncrement:294>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1482,7 +1482,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "531"
     SimulinkSubDomain	    "Simulink"
@@ -5118,37 +5118,37 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTime',"
       "'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'S"
-      "erializedDisplays',{struct('MinYLimReal','-875.00000','MaxYLimReal','7875.00000','YLabelReal','','MinYLimMag',' "
-      "0.00000','MaxYLimMag','7875.00000','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
-      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
-      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
-      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
-      "0.650980392156863],'Title','RPM','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'),struct('V"
-      "isible','on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Engine Controller/RPM','Engine/4','Ta"
-      "rget RPM  Slider'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-158.51737','MaxYLimReal','91.08546'"
-      ",'YLabelReal','','MinYLimMag','24.9999938','MaxYLimMag','25.0000013','LegendVisibility','On','XGrid',true,'YGrid"
-      "',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509"
-      "803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.160784"
-      "31372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.05882352"
-      "94117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Torque','LinePropertiesCache',{{struct('Color',[0 "
-      "0.447058823529412 0.741176470588235],'LineStyle','-','LineWidth',1,'Marker','none','Visible','on'),struct('Color"
-      "',[1 0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'N"
-      "umLines',2,'LineNames',{{'Engine/5:1','Engine/5:2'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','80."
-      "00000','MaxYLimReal','100.00000','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','On','XGr"
-      "id',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803"
-      "922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705"
-      "882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2745098039215"
-      "69 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Throttle','LinePropertiesCache',{{s"
-      "truct('Color',[1 0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNa"
-      "mes',{{}},'NumLines',1,'LineNames',{{'Switch 2'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',s"
-      "truct('YLabelReal','','AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922"
-      "],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.160784313725"
-      "49;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.05882352941176"
-      "47 1 1;1 0.0745098039215686 0.650980392156863],'Title','RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames"
-      "',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRa"
-      "ngeSamples','2','TimeRangeFrames','2'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'P"
-      "reviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','"
-      "Location',[-1934 -1555 -975 -1122],'VisibleAtModelOpen','on')"
+      "erializedDisplays',{struct('MinYLimReal','-795.83333','MaxYLimReal','7162.5','YLabelReal','','MinYLimMag',' 0.00"
+      "000','MaxYLimMag','7162.5','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0"
+      " 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666666666"
+      "67;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725490196"
+      "08 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980"
+      "392156863],'Title','RPM','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'),struct('Visible',"
+      "'on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Engine Controller/RPM','Engine/4','Target RPM"
+      "  Slider'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-81.89998','MaxYLimReal','106.58665','YLabel"
+      "Real','','MinYLimMag','24.9999938','MaxYLimMag','25.0000013','LegendVisibility','On','XGrid',true,'YGrid',true,'"
+      "PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],"
+      "'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549"
+      ";0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647"
+      " 1 1;1 0.0745098039215686 0.650980392156863],'Title','Torque','LinePropertiesCache',{{struct('Color',[0 0.447058"
+      "823529412 0.741176470588235],'LineStyle','-','LineWidth',1,'Marker','none','Visible','on'),struct('Color',[1 0.4"
+      " 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",2,'LineNames',{{'Engine/5:1','Engine/5:2'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-11.25','Ma"
+      "xYLimReal','101.25','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','On','XGrid',true,'YGr"
+      "id',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745"
+      "09803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607"
+      "8431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823"
+      "5294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Throttle','LinePropertiesCache',{{struct('Color'"
+      ",[1 0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'Nu"
+      "mLines',1,'LineNames',{{'Switch 2'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabel"
+      "Real','','AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder"
+      "',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686"
+      "2745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07"
+      "45098039215686 0.650980392156863],'Title','RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
+      "nes',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRangeSamples','"
+      "0.5','TimeRangeFrames','0.5'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAu"
+      "toscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location'"
+      ",[-1935 -2084 -15 -1121],'VisibleAtModelOpen','on')"
       NumInputPorts	      "3"
       Floating		      off
     }
@@ -5179,8 +5179,8 @@ Model {
       "8039215686 0.650980392156863],'Title','Current Ignition Angles','LinePropertiesCache',{{}},'UserDefinedChannelNa"
       "mes',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'TimeRangeSamples','5','TimeRangeFra"
       "mes','5'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomOut'),e"
-      "xtmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[-1935 -2076 -9"
-      "75 -1641],'VisibleAtModelOpen','on')"
+      "xtmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[-1205 -1869 -5"
+      "01 -1350],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -5330,7 +5330,6 @@ Model {
       Position		      [620, 832, 650, 868]
       ZOrder		      -13
       BackgroundColor	      "red"
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      ManualSwitch
@@ -5377,7 +5376,7 @@ Model {
       RTWMemSecDataInternal   "Inherit from model"
       RTWMemSecDataParameters "Inherit from model"
       ContentPreviewEnabled   off
-      gain		      "7000.0"
+      gain		      "1000"
       low		      "800"
       high		      "7000"
     }
@@ -6214,15 +6213,15 @@ Stateflow {
     machine		    1
     name		    "Engine Controller"
     windowPosition	    [-97 -1176 1607 1160]
-    viewLimits		    [-258.166 1247.434 1196.869 1848.069]
-    zoomFactor		    1.067
+    viewLimits		    [-45.756 1208.91 1272.656 1815.322]
+    zoomFactor		    0.889
     screen		    [1 1 1280 800 1.333333333333333]
     treeNode		    [0 3 0 0]
     viewObj		    2
     subviewS {
       zoomFactor	      1.25
     }
-    ssIdHighWaterMark	    273
+    ssIdHighWaterMark	    276
     decomposition	    SET_CHART
     chartFileNumber	    1
     executeAtInitialization 1
@@ -6418,7 +6417,7 @@ Stateflow {
   state {
     id			    17
     labelString		    "Ignition"
-    position		    [56.7709 1326.6497 758.8286 403.5409]
+    position		    [56.7709 1326.6497 768.4286 540.6409]
     fontSize		    12
     chart		    2
     treeNode		    [2 18 11 0]
@@ -6433,7 +6432,7 @@ Stateflow {
   state {
     id			    18
     labelString		    "Ignite_1/\non after(2, clk):\nIgnite4 = 0;"
-    position		    [254.0971 1411.435 90 60]
+    position		    [254.8971 1560.235 90 60]
     fontSize		    12
     chart		    2
     treeNode		    [17 0 0 19]
@@ -6445,7 +6444,7 @@ Stateflow {
   state {
     id			    19
     labelString		    "Ignite_2/\non after(2, clk):\nIgnite1 = 0;"
-    position		    [515.8304 1411.435 90 60]
+    position		    [516.6304 1560.235 90 60]
     fontSize		    12
     chart		    2
     treeNode		    [17 0 18 21]
@@ -6457,7 +6456,7 @@ Stateflow {
   state {
     id			    20
     labelString		    "Ignite_3/\non after(2, clk):\nIgnite2 = 0;"
-    position		    [515.8304 1584.0451 90 60]
+    position		    [516.6304 1732.8451 90 60]
     fontSize		    12
     chart		    2
     treeNode		    [17 0 21 0]
@@ -6469,7 +6468,7 @@ Stateflow {
   state {
     id			    21
     labelString		    "Ignite_4/\non after(2, clk):\nIgnite3 = 0;"
-    position		    [254.0971 1584.0451 90 60]
+    position		    [254.8971 1732.8451 90 60]
     fontSize		    12
     chart		    2
     treeNode		    [17 0 19 20]
@@ -6757,19 +6756,19 @@ Stateflow {
   transition {
     id			    33
     labelString		    ""
-    labelPosition	    [215.037 596.145 0 0]
+    labelPosition	    [537.384 602.976 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 215.037 587.6534 0 0]
+      intersection	      [0 -0 1 0 537.3839 587.6534 0 0]
     }
     dst {
-      id		      14
-      intersection	      [1 0 -1 0.4888 215.037 618.2978 0 0]
+      id		      13
+      intersection	      [1 0 -1 0.5281 537.3839 618.2978 0 0]
     }
-    midPoint		    [215.037 596.145]
+    midPoint		    [537.3839 602.9756]
     chart		    2
     visible		    0
-    dataLimits		    [212.637 217.437 587.653 618.298]
+    dataLimits		    [534.984 539.784 587.653 618.298]
     subviewer		    2
     slide {
       sticky		      BOTH_STICK
@@ -6929,44 +6928,44 @@ Stateflow {
   }
   transition {
     id			    40
-    labelString		    ""
-    labelPosition	    [274.647 1396.435 0 0]
+    labelString		    "{Ignite1 = 1;}"
+    labelPosition	    [573.168 1504.006 69.656 16]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 274.6471 1381.435 0 0]
+      intersection	      [0 0 1 0 561.6304 1478.0058 0 0]
     }
     dst {
-      id		      18
-      intersection	      [1 0 -1 0.2283 274.6471 1411.435 0 0]
+      id		      19
+      intersection	      [1 -0 -1 0.5 561.6304 1560.235 0 0]
     }
-    midPoint		    [274.6471 1396.435]
+    midPoint		    [561.6304 1515.1204]
     chart		    2
-    dataLimits		    [272.247 277.047 1381.435 1411.435]
+    dataLimits		    [559.23 564.03 1478.006 1560.235]
     subviewer		    2
     drawStyle		    SMART
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
-    ssIdNumber		    259
+    ssIdNumber		    276
     linkNode		    [17 0 41]
   }
   transition {
     id			    41
     labelString		    "[position + Adv > 720 & position > 630]/{\nIgnite1 = 1;}"
-    labelPosition	    [350.451 1354.076 214.313 30]
+    labelPosition	    [320.051 1518.876 214.313 30]
     fontSize		    12
     src {
       id		      18
-      intersection	      [2 1 0 0.4929 344.0971 1441.0095 0 0]
+      intersection	      [2 1 0 0.4929 344.8971 1589.8095 0 0]
     }
     dst {
       id		      19
-      intersection	      [4 -1 -0 0.5071 515.8304 1441.0095 0 0]
+      intersection	      [4 -1 -0 0.5071 516.6304 1589.8095 0 0]
     }
-    midPoint		    [425.9638 1441.0095]
+    midPoint		    [426.7638 1589.8095]
     chart		    2
-    dataLimits		    [344.097 515.83 1438.609 1443.409]
+    dataLimits		    [344.897 516.63 1587.409 1592.209]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -6979,19 +6978,19 @@ Stateflow {
   transition {
     id			    42
     labelString		    "[position + Adv >= 540 & position < 540]/{\nIgnite4 = 1;}"
-    labelPosition	    [65.026 1516 221.313 30]
+    labelPosition	    [65.826 1664.8 221.313 30]
     fontSize		    12
     src {
       id		      21
-      intersection	      [1 0 -1 0.4716 296.5402 1584.0451 0 0]
+      intersection	      [1 0 -1 0.4716 297.3402 1732.8451 0 0]
     }
     dst {
       id		      18
-      intersection	      [3 0 1 0.5284 296.5402 1471.435 0 0]
+      intersection	      [3 0 1 0.5284 297.3402 1620.235 0 0]
     }
-    midPoint		    [296.5402 1531.7401]
+    midPoint		    [297.3402 1680.5401]
     chart		    2
-    dataLimits		    [294.14 298.94 1471.435 1584.045]
+    dataLimits		    [294.94 299.74 1620.235 1732.845]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -7004,19 +7003,19 @@ Stateflow {
   transition {
     id			    43
     labelString		    "[position+Adv >= 180 & position < 180]/{\nIgnite2 = 1;}"
-    labelPosition	    [599.225 1503.409 215.313 30]
+    labelPosition	    [582.425 1657.809 215.313 30]
     fontSize		    12
     src {
       id		      19
-      intersection	      [3 0 1 0.5 560.8304 1471.435 0 0]
+      intersection	      [3 0 1 0.5 561.6304 1620.235 0 0]
     }
     dst {
       id		      20
-      intersection	      [1 0 -1 0.5 560.8304 1584.0451 0 0]
+      intersection	      [1 0 -1 0.5 561.6304 1732.8451 0 0]
     }
-    midPoint		    [560.8304 1523.7401]
+    midPoint		    [561.6304 1672.5401]
     chart		    2
-    dataLimits		    [558.43 563.23 1471.435 1584.045]
+    dataLimits		    [559.23 564.03 1620.235 1732.845]
     subviewer		    2
     drawStyle		    SMART
     slide {
@@ -7029,19 +7028,19 @@ Stateflow {
   transition {
     id			    44
     labelString		    "[position + Adv >= 360 & position < 360]/{\nIgnite3 = 1;}"
-    labelPosition	    [334.851 1661.772 221.313 30]
+    labelPosition	    [335.651 1810.572 221.313 30]
     fontSize		    12
     src {
       id		      20
-      intersection	      [4 -1 0 0.5185 515.8304 1612.9325 0 0]
+      intersection	      [4 -1 0 0.5185 516.6304 1761.7325 0 0]
     }
     dst {
       id		      21
-      intersection	      [2 1 0 0.4815 344.0971 1612.9325 0 0]
+      intersection	      [2 1 0 0.4815 344.8971 1761.7325 0 0]
     }
-    midPoint		    [433.9638 1612.9325]
+    midPoint		    [434.7638 1761.7325]
     chart		    2
-    dataLimits		    [344.097 515.83 1610.532 1615.332]
+    dataLimits		    [344.897 516.63 1759.332 1764.132]
     subviewer		    2
     drawStyle		    SMART
     slide {
