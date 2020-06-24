@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.341"
+    ComputedModelVersion    "1.342"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -96,7 +96,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-1928.0, -8.0, 1936.0, 1056.0]
+      Location		      [-8.0, -8.0, 1936.0, 1056.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -121,15 +121,26 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [1]
 	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "StateflowChart"
+	  LoadSaveID		  "481"
 	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-460.92258499264881, 410.26633897488671]
-	  SceneRectInView	  [-460.92258499264881, 410.26633897488671, 1882.0, 814.0]
+	  ZoomFactor		  [0.6]
+	  Offset		  [318.99879189443493, -31.159743324786291]
+	  SceneRectInView	  [318.99879189443493, -31.159743324786291, 3136.666666666667, 1356.6666666666667]
 	}
 	Object {
 	  $ObjectID		  6
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1882.0, 814.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [-127.67393393310925, 391.72689914786304]
+	  SceneRectInView	  [-127.67393393310925, 391.72689914786304, 1075.4285714285713, 465.14285714285717]
+	}
+	Object {
+	  $ObjectID		  7
 	  IsActive		  [0]
 	  IsTabbed		  [0]
 	  ViewObjType		  "StateflowChart"
@@ -138,17 +149,6 @@ Model {
 	  ZoomFactor		  [0.5]
 	  Offset		  [-1161.2061269952565, -56.891640484143863]
 	  SceneRectInView	  [-1161.2061269952565, -56.891640484143863, 3764.0, 1628.0]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  IsTabbed		  [0]
-	  ViewObjType		  "StateflowChart"
-	  LoadSaveID		  "481"
-	  Extents		  [1882.0, 814.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [602.03262720777525, 1032.1052923097295]
-	  SceneRectInView	  [602.03262720777525, 1032.1052923097295, 1882.0, 814.0]
 	}
 	Object {
 	  $ObjectID		  8
@@ -287,11 +287,11 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Robin Vogt"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jun 23 23:49:21 2020"
-  RTWModifiedTimeStamp	  514856841
+  LastModifiedDate	  "Wed Jun 24 12:02:39 2020"
+  RTWModifiedTimeStamp	  514895744
   ModifiedHistory	  "Original Modell stammt von Martin Fränzle, Universität Oldenburg.\nErweiterung durch Stefan Disch"
   ", Universität Freiburg"
-  ModelVersionFormat	  "1.%<AutoIncrement:341>"
+  ModelVersionFormat	  "1.%<AutoIncrement:342>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1566,7 +1566,7 @@ Model {
   System {
     Name		    "motor_controller"
     Location		    [-1928, -8, 8, 1048]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1580,7 +1580,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "175"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "568"
     SimulinkSubDomain	    "Simulink"
@@ -5220,37 +5220,37 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTime',"
       "'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'S"
-      "erializedDisplays',{struct('MinYLimReal','88.54167','MaxYLimReal','6953.125','YLabelReal','','MinYLimMag','88.54"
-      "167','MaxYLimMag','6953.125','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',"
-      "[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666666"
-      "6667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254901"
-      "9608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6509"
-      "80392156863],'Title','RPM','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'),struct('Visible"
-      "','on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Engine Controller/RPM','Engine/4','Target R"
-      "PM  Slider'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','11.18033','MaxYLimReal','96.29746','YLabel"
-      "Real','','MinYLimMag','24.9999938','MaxYLimMag','25.0000013','LegendVisibility','On','XGrid',true,'YGrid',true,'"
-      "PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],"
-      "'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549"
-      ";0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647"
-      " 1 1;1 0.0745098039215686 0.650980392156863],'Title','Torque','LinePropertiesCache',{{struct('Color',[0 0.447058"
-      "823529412 0.741176470588235],'LineStyle','-','LineWidth',1,'Marker','none','Visible','on'),struct('Color',[1 0.4"
-      " 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines'"
-      ",2,'LineNames',{{'Engine/5:1','Engine/5:2'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-11.25','Ma"
-      "xYLimReal','101.25','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','On','XGrid',true,'YGr"
-      "id',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745"
-      "09803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607"
-      "8431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823"
-      "5294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Throttle','LinePropertiesCache',{{struct('Color'"
-      ",[1 0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'Nu"
-      "mLines',1,'LineNames',{{'Throttle'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabel"
-      "Real','','AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder"
-      "',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686"
-      "2745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07"
-      "45098039215686 0.650980392156863],'Title','RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
-      "nes',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRangeSamples','"
-      "10','TimeRangeFrames','10'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Confi"
-      "guration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[1 76 1921 1039],'VisibleA"
-      "tModelOpen','on')"
+      "erializedDisplays',{struct('MinYLimReal','338.54167','MaxYLimReal','4703.125','YLabelReal','','MinYLimMag','338."
+      "54167','MaxYLimMag','4703.125','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor"
+      "',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666"
+      "666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549"
+      "019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65"
+      "0980392156863],'Title','RPM','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'),struct('Visib"
+      "le','on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Engine Controller/RPM','Engine/4','Target"
+      " RPM  Slider'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-29.97619','MaxYLimReal','100.8704','YLa"
+      "belReal','','MinYLimMag','24.9999938','MaxYLimMag','25.0000013','LegendVisibility','On','XGrid',true,'YGrid',tru"
+      "e,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68627450980392"
+      "2],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372"
+      "549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117"
+      "647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Torque','LinePropertiesCache',{{struct('Color',[0 0.447"
+      "058823529412 0.741176470588235],'LineStyle','-','LineWidth',1,'Marker','none','Visible','on'),struct('Color',[1 "
+      "0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLin"
+      "es',2,'LineNames',{{'Engine/5:1','Engine/5:2'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-11.25',"
+      "'MaxYLimReal','101.25','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','On','XGrid',true,'"
+      "YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862"
+      "74509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1"
+      "6078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058"
+      "8235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Throttle','LinePropertiesCache',{{struct('Col"
+      "or',[1 0.4 0],'LineStyle','-','LineWidth',0.75,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},"
+      "'NumLines',1,'LineNames',{{'Throttle'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLa"
+      "belReal','','AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOr"
+      "der',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215"
+      "6862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0"
+      ".0745098039215686 0.650980392156863],'Title','RPM','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Nu"
+      "mLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRangeSamples"
+      "','10','TimeRangeFrames','10'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Co"
+      "nfiguration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Location',[1 76 1921 1039],'Visib"
+      "leAtModelOpen','on')"
       NumInputPorts	      "3"
       Floating		      off
     }
@@ -5527,28 +5527,28 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
-      "',true,'SerializedDisplays',{struct('MinYLimReal','-3692.1789','MaxYLimReal','979.6101','YLabelReal','','MinYLim"
-      "Mag','  0.00000','MaxYLimMag','3692.1789','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false"
-      ",'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
-      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 "
-      "0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
-      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visibl"
-      "e','on'),struct('Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Throttle Control/de"
-      "viation','Throttle Control/deviation_int','Throttle Control/deviation_dt'}},'ShowContent',true,'Placement',1),st"
-      "ruct('MinYLimReal','-0.72','MaxYLimReal','0.08','YLabelReal','','MinYLimMag','  0.00000','MaxYLimMag','10272.663"
-      "3','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0"
-      ".686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0."
-      "623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0."
-      "717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Si"
-      "gnalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','off'),struct('Visible','on')}},'Use"
-      "rDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Throttle Control/feedback','Throttle Control/delta_thrott"
-      "le'}},'ShowContent',true,'Placement',2)},'DisplayPropertyDefaults',struct('YLabelReal','','AxesColor',[0 0 0],'A"
-      "xesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.6235294"
-      "11764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3"
-      "92156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215686"
-      "3]),'TimeRangeSamples','10','TimeRangeFrames','10','DisplayLayoutDimensions',[2 1]),extmgr.Configuration('Tools'"
-      ",'Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements'"
-      ",true,'Version','2020a')),'Version','2020a','Position',[1921 52 1680 933],'VisibleAtModelOpen','on')"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-5336.42759','MaxYLimReal','5859.79715','YLabelReal','','MinY"
+      "LimMag','  0.00000','MaxYLimMag','5859.79715','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',f"
+      "alse,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1"
+      " 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745"
+      "098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509"
+      "8039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Vi"
+      "sible','on'),struct('Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Throttle Contro"
+      "l/deviation','Throttle Control/deviation_int','Throttle Control/deviation_dt'}},'ShowContent',true,'Placement',1"
+      "),struct('MinYLimReal','-0.72562','MaxYLimReal','0.08062','YLabelReal','','MinYLimMag','  0.00000','MaxYLimMag',"
+      "'10272.6633','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTic"
+      "kColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803"
+      "9215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803"
+      "9215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Ti"
+      "tle','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','off'),struct('Visible','o"
+      "n')}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Throttle Control/feedback','Throttle Control/de"
+      "lta_throttle'}},'ShowContent',true,'Placement',2)},'DisplayPropertyDefaults',struct('YLabelReal','','AxesColor',"
+      "[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686"
+      " 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.27450980392"
+      "1569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509"
+      "80392156863]),'TimeRangeSamples','10','TimeRangeFrames','10','DisplayLayoutDimensions',[2 1]),extmgr.Configurati"
+      "on('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Mea"
+      "surements',true,'Version','2020a')),'Version','2020a','Position',[1921 52 1680 933],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -5681,8 +5681,8 @@ Model {
       SFBlockType	      "Chart"
       System {
 	Name			"Throttle Control"
-	Location		[-1928, -8, 8, 1048]
-	Open			off
+	Location		[-8, -8, 1928, 1048]
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -6738,7 +6738,7 @@ Stateflow {
     id			    1
     name		    "motor_controller"
     sfVersion		    80000032
-    firstTarget		    194
+    firstTarget		    181
   }
   chart {
     id			    2
@@ -9329,8 +9329,8 @@ Stateflow {
     machine		    1
     name		    "Throttle Control"
     windowPosition	    [-8 -8 1936 1056]
-    viewLimits		    [602.033 2484.033 1032.105 1846.105]
-    zoomFactor		    1.333
+    viewLimits		    [318.999 3455.665 -31.16 1325.507]
+    zoomFactor		    2.222
     screen		    [1 1 1280 800 1.333333333333333]
     treeNode		    [0 139 0 0]
     viewObj		    132
@@ -9344,13 +9344,13 @@ Stateflow {
     saturateOnIntegerOverflow 1
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
-    firstData		    180
-    firstEvent		    192
+    firstData		    167
+    firstEvent		    179
   }
   state {
     id			    133
     labelString		    "Reach_target"
-    position		    [591.3197 1165.75 364.6667 192]
+    position		    [590.0697 1044.0833 364.6667 192]
     fontSize		    12
     chart		    132
     treeNode		    [140 134 137 0]
@@ -9358,12 +9358,12 @@ Stateflow {
     ssIdNumber		    59
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    firstTransition	    152
+    firstTransition	    146
   }
   state {
     id			    134
     labelString		    "Accelerate/\nThrottle = 90;"
-    position		    [606.9863 1244.1167 90 60]
+    position		    [605.7363 1122.45 90 60]
     fontSize		    12
     chart		    132
     treeNode		    [133 0 0 135]
@@ -9375,7 +9375,7 @@ Stateflow {
   state {
     id			    135
     labelString		    "Decelerate/\nThrottle = 0;"
-    position		    [844.1863 1244.1167 90 60]
+    position		    [842.9363 1122.45 90 60]
     fontSize		    12
     chart		    132
     treeNode		    [133 0 134 0]
@@ -9390,7 +9390,7 @@ Stateflow {
     position		    [572.628 125.1192 494.3595 108.1619]
     fontSize		    12
     chart		    132
-    treeNode		    [139 0 0 145]
+    treeNode		    [139 0 0 141]
     subviewer		    132
     ssIdNumber		    67
     type		    AND_STATE
@@ -9400,32 +9400,32 @@ Stateflow {
   state {
     id			    137
     labelString		    "Hold_RPM"
-    position		    [1183.7965 1017.3333 686.75 364]
+    position		    [1182.5465 895.6666 686.75 364]
     fontSize		    12
     chart		    132
-    treeNode		    [140 151 0 133]
+    treeNode		    [140 138 0 133]
     subviewer		    132
     ssIdNumber		    89
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    firstTransition	    155
+    firstTransition	    149
   }
   state {
     id			    138
-    labelString		    "Start_clock/\nen: \nclk_count = 0;\n\ndu:\nclk_count ++;"
-    position		    [587.2947 331.1667 119.7143 101.1429]
+    labelString		    "Adjust_throttle/\nThrottle = feedback * 90;"
+    position		    [1210.9052 955.4672 149.6571 268]
     fontSize		    12
     chart		    132
-    treeNode		    [141 0 149 0]
+    treeNode		    [137 0 0 0]
     subviewer		    132
-    ssIdNumber		    91
+    ssIdNumber		    277
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
   }
   state {
     id			    139
     labelString		    "Calculations"
-    position		    [560.3518 98.2 2592.6667 625.3458]
+    position		    [560.3518 98.2 684.6667 736.8458]
     fontSize		    12
     chart		    132
     treeNode		    [132 136 0 140]
@@ -9434,12 +9434,12 @@ Stateflow {
     type		    AND_STATE
     decomposition	    SET_STATE
     executionOrder	    1
-    firstData		    158
+    firstData		    152
   }
   state {
     id			    140
     labelString		    "Adjust_throttle"
-    position		    [561.6018 993.25 1334.4167 415.4125]
+    position		    [560.3518 871.5833 1334.4167 415.4125]
     fontSize		    12
     chart		    132
     treeNode		    [132 137 139 0]
@@ -9448,27 +9448,27 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    2
-    firstTransition	    164
+    firstTransition	    158
   }
   state {
     id			    141
     labelString		    "Deviation_int"
-    position		    [572.628 248.8334 2529.4833 231.8333]
+    position		    [572.628 257.1346 657.8166 233.5]
     fontSize		    12
     chart		    132
-    treeNode		    [139 150 145 143]
+    treeNode		    [139 144 136 143]
     subviewer		    132
     ssIdNumber		    99
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    2
-    firstData		    167
-    firstTransition	    168
+    firstData		    161
+    firstTransition	    162
   }
   state {
     id			    142
     labelString		    "Start_clock/\nen: \nclk_count = 0;\ndeviation_prev = deviation;\n\ndu:\nclk_count ++;"
-    position		    [587.2947 565.1288 163.7143 115.1429]
+    position		    [587.2947 554.2236 154.7143 114.1429]
     fontSize		    12
     chart		    132
     treeNode		    [143 0 0 0]
@@ -9483,129 +9483,57 @@ Stateflow {
     position		    [572.628 512.8214 560.5333 185.8667]
     fontSize		    12
     chart		    132
-    treeNode		    [139 142 141 0]
+    treeNode		    [139 142 141 145]
     subviewer		    132
     ssIdNumber		    269
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    3
-    firstData		    176
-    firstTransition	    178
+    firstData		    163
+    firstTransition	    165
   }
   state {
     id			    144
-    labelString		    "int_0/\nen:\nint_0 = clk_count * 1e-5 *deviation;\nclk_count = 0;\n\ndu:\nclk_count ++;\n"
-    position		    [834.7071 328.4882 196.5 106.5]
+    labelString		    "Calculate_integral/\nen:\nint_0 = int_1;\nint_1 = int_2;\nint_2 = int_3;\nint_3 = int_4;\nint_4 "
+    "= clk_count * 1e-5 *deviation;\nclk_count = 0;\ndeviation_int = int_0 + int_1 + int_2 + int_3 + int_4;\n\ndu:\nclk"
+    "_count ++;\n"
+    position		    [587.2947 283.706 290.5 188.2619]
     fontSize		    12
     chart		    132
-    treeNode		    [141 0 150 146]
-    subviewer		    132
-    ssIdNumber		    236
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-  }
-  state {
-    id			    145
-    labelString		    "Calculate_delta_throttle/\nfeedback = (K_p*deviation + K_i*deviation_int + K_d*deviation_dt)/500"
-    "0;\n"
-    position		    [1104.2542 129.6001 395.6 99.2]
-    fontSize		    12
-    chart		    132
-    treeNode		    [139 0 136 141]
-    subviewer		    132
-    ssIdNumber		    249
-    type		    AND_STATE
-    decomposition	    CLUSTER_STATE
-    executionOrder	    4
-  }
-  state {
-    id			    146
-    labelString		    "int_1/\nen:\nint_1 = clk_count * 1e-5 *deviation;\nclk_count = 0;\n\ndu:\nclk_count ++;\n"
-    position		    [1158.9052 328.4882 196.5 106.5]
-    fontSize		    12
-    chart		    132
-    treeNode		    [141 0 144 147]
-    subviewer		    132
-    ssIdNumber		    254
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-  }
-  state {
-    id			    147
-    labelString		    "int_2/\nen:\nint_2 = clk_count * 1e-5 *deviation;\nclk_count = 0;\n\ndu:\nclk_count ++;\n"
-    position		    [1483.1034 328.4882 196.5 106.5]
-    fontSize		    12
-    chart		    132
-    treeNode		    [141 0 146 148]
-    subviewer		    132
-    ssIdNumber		    256
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-  }
-  state {
-    id			    148
-    labelString		    "int_3/\nen:\nint_3 = clk_count * 1e-5 *deviation;\nclk_count = 0;\n\ndu:\nclk_count ++;\n"
-    position		    [1796.0909 328.4882 196.5 106.5]
-    fontSize		    12
-    chart		    132
-    treeNode		    [141 0 147 149]
-    subviewer		    132
-    ssIdNumber		    259
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-  }
-  state {
-    id			    149
-    labelString		    "int_4/\nen:\nint_4 = clk_count * 1e-5 *deviation;\nclk_count = 0;\n\ndu:\nclk_count ++;\n"
-    position		    [2126.5947 328.4882 196.5 106.5]
-    fontSize		    12
-    chart		    132
-    treeNode		    [141 0 148 138]
-    subviewer		    132
-    ssIdNumber		    261
-    type		    OR_STATE
-    decomposition	    CLUSTER_STATE
-  }
-  state {
-    id			    150
-    labelString		    "int_5/\nen:\nint_0 = int_1;\nint_1 = int_2;\nint_2 = int_3;\nint_3 = int_4;\nint_4 = clk_count *"
-    " 1e-5 *deviation;\nclk_count = 0;\ndeviation_int = int_0 + int_1 + int_2 + int_3 + int_4;\n\ndu:\nclk_count ++;\n"
-    position		    [2457.0985 273.3929 290.5 188.2619]
-    fontSize		    12
-    chart		    132
-    treeNode		    [141 0 0 144]
+    treeNode		    [141 0 0 0]
     subviewer		    132
     ssIdNumber		    266
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
   }
   state {
-    id			    151
-    labelString		    "Adjust_throttle/\nThrottle = feedback * 90;"
-    position		    [1212.1552 1077.1339 149.6571 268]
+    id			    145
+    labelString		    "Calculate_feedback/\nfeedback = (K_p*deviation + K_i*deviation_int + K_d*deviation_dt)/5000;\n"
+    position		    [575.8531 720.8749 395.6 99.2]
     fontSize		    12
     chart		    132
-    treeNode		    [137 0 0 0]
+    treeNode		    [139 0 143 0]
     subviewer		    132
-    ssIdNumber		    277
-    type		    OR_STATE
+    ssIdNumber		    249
+    type		    AND_STATE
     decomposition	    CLUSTER_STATE
+    executionOrder	    4
   }
   transition {
-    id			    152
+    id			    146
     labelString		    ""
-    labelPosition	    [651.929 1224.482 0 0]
+    labelPosition	    [650.679 1102.815 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 651.9287 1217.5011 0 0]
+      intersection	      [0 0 1 0 650.6787 1095.8344 0 0]
     }
     dst {
       id		      134
-      intersection	      [1 0 -1 0.4994 651.9287 1244.1167 0 0]
+      intersection	      [1 0 -1 0.4994 650.6787 1122.45 0 0]
     }
-    midPoint		    [651.9287 1224.4819]
+    midPoint		    [650.6787 1102.8152]
     chart		    132
-    dataLimits		    [649.529 654.329 1217.501 1244.117]
+    dataLimits		    [648.279 653.079 1095.834 1122.45]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9613,24 +9541,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    62
-    linkNode		    [133 0 153]
+    linkNode		    [133 0 147]
   }
   transition {
-    id			    153
+    id			    147
     labelString		    "[RPM > TargetRPM]"
-    labelPosition	    [718.938 1220.65 108.719 16]
+    labelPosition	    [717.688 1098.983 108.719 16]
     fontSize		    12
     src {
       id		      134
-      intersection	      [2 1 0 0.34 696.9863 1264.5167 0 0]
+      intersection	      [2 1 0 0.34 695.7363 1142.85 0 0]
     }
     dst {
       id		      135
-      intersection	      [4 -1 0 0.66 844.1863 1264.5167 0 0]
+      intersection	      [4 -1 0 0.66 842.9363 1142.85 0 0]
     }
-    midPoint		    [766.5863 1264.5167]
+    midPoint		    [765.3363 1142.85]
     chart		    132
-    dataLimits		    [696.986 844.186 1262.117 1266.917]
+    dataLimits		    [695.736 842.936 1140.45 1145.25]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9638,48 +9566,48 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    63
-    linkNode		    [133 152 154]
+    linkNode		    [133 146 148]
   }
   transition {
-    id			    154
+    id			    148
     labelString		    "[RPM < TargetRPM]"
-    labelPosition	    [716.219 1303.752 108.719 16]
+    labelPosition	    [714.969 1182.085 108.719 16]
     fontSize		    12
     src {
       id		      135
-      intersection	      [4 -1 0 0.3356 844.1863 1283.9833 0 0]
+      intersection	      [4 -1 0 0.3356 842.9363 1162.3166 0 0]
     }
     dst {
       id		      134
-      intersection	      [2 1 0 0.6644 696.9863 1283.9833 0 0]
+      intersection	      [2 1 0 0.6644 695.7363 1162.3166 0 0]
     }
-    midPoint		    [774.5863 1283.9833]
+    midPoint		    [773.3363 1162.3166]
     chart		    132
     visible		    0
-    dataLimits		    [696.986 844.186 1281.583 1286.383]
+    dataLimits		    [695.736 842.936 1159.917 1164.717]
     subviewer		    132
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    65
-    linkNode		    [133 153 0]
+    linkNode		    [133 147 0]
   }
   transition {
-    id			    155
+    id			    149
     labelString		    ""
-    labelPosition	    [1246.327 1062.134 0 0]
+    labelPosition	    [1245.077 940.467 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 1246.3269 1047.1339 0 0]
+      intersection	      [0 0 1 0 1245.0769 925.4672 0 0]
     }
     dst {
-      id		      151
-      intersection	      [1 0 -1 0.2283 1246.3269 1077.1339 0 0]
+      id		      138
+      intersection	      [1 0 -1 0.2283 1245.0769 955.4672 0 0]
     }
-    midPoint		    [1246.3269 1062.1339]
+    midPoint		    [1245.0769 940.4672]
     chart		    132
-    dataLimits		    [1243.927 1248.727 1047.134 1077.134]
+    dataLimits		    [1242.677 1247.477 925.467 955.467]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9687,24 +9615,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    278
-    linkNode		    [137 0 156]
+    linkNode		    [137 0 150]
   }
   transition {
-    id			    156
+    id			    150
     labelString		    "[feedback > 1]/{feedback = 1;}"
-    labelPosition	    [1426.612 1150.776 161.344 16]
+    labelPosition	    [1425.362 1029.109 161.344 16]
     fontSize		    12
     src {
-      id		      151
-      intersection	      [2 1 0 0.1448 1361.8124 1115.9339 0 0]
+      id		      138
+      intersection	      [2 1 0 0.1448 1360.5624 994.2672 0 0]
     }
     dst {
-      id		      151
-      intersection	      [2 1 0 0.4544 1361.8124 1198.9148 0 0]
+      id		      138
+      intersection	      [2 1 0 0.4544 1360.5624 1077.2481 0 0]
     }
-    midPoint		    [1409.8124 1157.4243]
+    midPoint		    [1408.5624 1035.7576]
     chart		    132
-    dataLimits		    [1361.812 1409.946 1115.934 1201.315]
+    dataLimits		    [1360.562 1408.696 994.267 1079.648]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9713,24 +9641,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    279
-    linkNode		    [137 155 157]
+    linkNode		    [137 149 151]
   }
   transition {
-    id			    157
+    id			    151
     labelString		    "[feedback < 0]/{feedback = 0;}"
-    labelPosition	    [1430.895 1252.915 161.344 16]
+    labelPosition	    [1429.645 1131.248 161.344 16]
     fontSize		    12
     src {
-      id		      151
-      intersection	      [2 1 0 0.5533 1361.8124 1225.4148 0 0]
+      id		      138
+      intersection	      [2 1 0 0.5533 1360.5624 1103.7481 0 0]
     }
     dst {
-      id		      151
-      intersection	      [2 1 0 0.8593 1361.8124 1307.4148 0 0]
+      id		      138
+      intersection	      [2 1 0 0.8593 1360.5624 1185.7481 0 0]
     }
-    midPoint		    [1409.8124 1266.4148]
+    midPoint		    [1408.5624 1144.7481]
     chart		    132
-    dataLimits		    [1361.812 1409.946 1225.415 1309.815]
+    dataLimits		    [1360.562 1408.696 1103.748 1188.148]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9739,10 +9667,10 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    280
-    linkNode		    [137 156 0]
+    linkNode		    [137 150 0]
   }
   data {
-    id			    158
+    id			    152
     ssIdNumber		    240
     name		    "int_0"
     scope		    LOCAL_DATA
@@ -9758,10 +9686,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [139 0 159]
+    linkNode		    [139 0 153]
   }
   data {
-    id			    159
+    id			    153
     ssIdNumber		    241
     name		    "int_1"
     scope		    LOCAL_DATA
@@ -9777,10 +9705,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [139 158 160]
+    linkNode		    [139 152 154]
   }
   data {
-    id			    160
+    id			    154
     ssIdNumber		    242
     name		    "int_2"
     scope		    LOCAL_DATA
@@ -9796,10 +9724,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [139 159 161]
+    linkNode		    [139 153 155]
   }
   data {
-    id			    161
+    id			    155
     ssIdNumber		    243
     name		    "int_3"
     scope		    LOCAL_DATA
@@ -9815,10 +9743,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [139 160 162]
+    linkNode		    [139 154 156]
   }
   data {
-    id			    162
+    id			    156
     ssIdNumber		    244
     name		    "int_4"
     scope		    LOCAL_DATA
@@ -9834,10 +9762,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [139 161 163]
+    linkNode		    [139 155 157]
   }
   data {
-    id			    163
+    id			    157
     ssIdNumber		    275
     name		    "time_interval"
     scope		    CONSTANT_DATA
@@ -9861,23 +9789,23 @@ Stateflow {
       }
     }
     dataType		    "uint64"
-    linkNode		    [139 162 0]
+    linkNode		    [139 156 0]
   }
   transition {
-    id			    164
+    id			    158
     labelString		    ""
-    labelPosition	    [772.492 1150.75 0 0]
+    labelPosition	    [771.242 1029.083 0 0]
     fontSize		    12
     src {
-      intersection	      [0 -0 1 0 772.4921 1135.75 0 0]
+      intersection	      [0 -0 1 0 771.2421 1014.0833 0 0]
     }
     dst {
       id		      133
-      intersection	      [1 0 -1 0.4968 772.4921 1165.75 0 0]
+      intersection	      [1 0 -1 0.4968 771.2421 1044.0833 0 0]
     }
-    midPoint		    [772.4921 1150.75]
+    midPoint		    [771.2421 1029.0833]
     chart		    132
-    dataLimits		    [770.092 774.892 1135.75 1165.75]
+    dataLimits		    [768.842 773.642 1014.083 1044.083]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9885,24 +9813,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    103
-    linkNode		    [140 0 165]
+    linkNode		    [140 0 159]
   }
   transition {
-    id			    165
+    id			    159
     labelString		    "[abs(deviation) < threshhold]"
-    labelPosition	    [997.081 1194.567 153.625 16]
+    labelPosition	    [995.831 1072.9 153.625 16]
     fontSize		    12
     src {
       id		      133
-      intersection	      [2 1 0 0.2981 955.9864 1222.9925 0 0]
+      intersection	      [2 1 0 0.2981 954.7364 1101.3258 0 0]
     }
     dst {
       id		      137
-      intersection	      [4 -1 -0 0.435 1183.7965 1222.9925 0 0]
+      intersection	      [4 -1 -0 0.435 1182.5465 1101.3258 0 0]
     }
-    midPoint		    [1065.8915 1222.9925]
+    midPoint		    [1064.6415 1101.3258]
     chart		    132
-    dataLimits		    [955.986 1183.796 1220.592 1225.392]
+    dataLimits		    [954.736 1182.546 1098.926 1103.726]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9910,24 +9838,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    104
-    linkNode		    [140 164 166]
+    linkNode		    [140 158 160]
   }
   transition {
-    id			    166
+    id			    160
     labelString		    "[abs(deviation) > threshhold]"
-    labelPosition	    [1004.167 1309.501 153.625 16]
+    labelPosition	    [1002.917 1187.834 153.625 16]
     fontSize		    12
     src {
       id		      137
-      intersection	      [4 -1 0 0.2372 1183.7965 1294.9925 0 0]
+      intersection	      [4 -1 0 0.2372 1182.5465 1173.3258 0 0]
     }
     dst {
       id		      133
-      intersection	      [2 1 -0 0.6731 955.9864 1294.9925 0 0]
+      intersection	      [2 1 -0 0.6731 954.7364 1173.3258 0 0]
     }
-    midPoint		    [1073.8915 1294.9925]
+    midPoint		    [1072.6415 1173.3258]
     chart		    132
-    dataLimits		    [955.986 1183.796 1292.592 1297.392]
+    dataLimits		    [954.736 1182.546 1170.926 1175.726]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -9935,10 +9863,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    105
-    linkNode		    [140 165 0]
+    linkNode		    [140 159 0]
   }
   data {
-    id			    167
+    id			    161
     ssIdNumber		    92
     name		    "clk_count"
     scope		    LOCAL_DATA
@@ -9964,45 +9892,21 @@ Stateflow {
     linkNode		    [141 0 0]
   }
   transition {
-    id			    168
-    labelString		    ""
-    labelPosition	    [643.11 316.167 0 0]
-    fontSize		    12
-    src {
-      intersection	      [0 -0 1 0 643.1096 301.1667 0 0]
-    }
-    dst {
-      id		      138
-      intersection	      [1 0 -1 0.4662 643.1096 331.1667 0 0]
-    }
-    midPoint		    [643.1096 316.1667]
-    chart		    132
-    dataLimits		    [640.71 645.51 301.167 331.167]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    263
-    linkNode		    [141 0 169]
-  }
-  transition {
-    id			    169
+    id			    162
     labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [2804.08 351.962 273.234 16]
+    labelPosition	    [934.276 362.275 273.234 16]
     fontSize		    12
     src {
-      id		      150
-      intersection	      [2 1 0 0.1549 2747.5985 302.5526 0 0]
+      id		      144
+      intersection	      [2 1 0 0.1549 877.7947 312.8657 0 0]
     }
     dst {
-      id		      150
-      intersection	      [2 1 0 0.7764 2747.5985 419.5538 0 0]
+      id		      144
+      intersection	      [2 1 0 0.7764 877.7947 429.8669 0 0]
     }
-    midPoint		    [2795.5985 361.0532]
+    midPoint		    [925.7947 371.3663]
     chart		    132
-    dataLimits		    [2747.598 2795.748 302.553 421.954]
+    dataLimits		    [877.795 925.945 312.866 432.267]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -10011,160 +9915,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    268
-    linkNode		    [141 168 170]
-  }
-  transition {
-    id			    170
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [653.393 287.191 273.234 16]
-    fontSize		    12
-    src {
-      id		      138
-      intersection	      [2 1 0 0.4777 707.009 379.4818 0 0]
-    }
-    dst {
-      id		      144
-      intersection	      [4 -1 -0 0.5212 834.7071 379.4818 0 0]
-    }
-    midPoint		    [766.8581 379.4818]
-    chart		    132
-    dataLimits		    [707.009 834.707 377.082 381.882]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    245
-    linkNode		    [141 169 171]
-  }
-  transition {
-    id			    171
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [954.273 286.31 273.234 16]
-    fontSize		    12
-    src {
-      id		      144
-      intersection	      [2 1 0 0.5 1031.2071 381.7382 0 0]
-    }
-    dst {
-      id		      146
-      intersection	      [4 -1 0 0.5 1158.9052 381.7382 0 0]
-    }
-    midPoint		    [1091.0562 381.7382]
-    chart		    132
-    dataLimits		    [1031.207 1158.905 379.338 384.138]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    255
-    linkNode		    [141 170 172]
-  }
-  transition {
-    id			    172
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [1281.131 299.421 273.234 16]
-    fontSize		    12
-    src {
-      id		      146
-      intersection	      [2 1 0 0.5 1355.4052 381.7382 0 0]
-    }
-    dst {
-      id		      147
-      intersection	      [4 -1 0 0.5 1483.1034 381.7382 0 0]
-    }
-    midPoint		    [1415.2543 381.7382]
-    chart		    132
-    dataLimits		    [1355.405 1483.103 379.338 384.138]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    257
-    linkNode		    [141 171 173]
-  }
-  transition {
-    id			    173
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [1601.263 299.873 273.234 16]
-    fontSize		    12
-    src {
-      id		      147
-      intersection	      [2 1 0 0.5 1679.6034 381.7382 0 0]
-    }
-    dst {
-      id		      148
-      intersection	      [4 -1 0 0.5 1796.0909 381.7382 0 0]
-    }
-    midPoint		    [1733.8471 381.7382]
-    chart		    132
-    dataLimits		    [1679.603 1796.091 379.338 384.138]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    260
-    linkNode		    [141 172 174]
-  }
-  transition {
-    id			    174
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [1911.81 297.683 273.234 16]
-    fontSize		    12
-    src {
-      id		      148
-      intersection	      [2 1 0 0.5 1992.5909 381.7382 0 0]
-    }
-    dst {
-      id		      149
-      intersection	      [4 -1 0 0.5 2126.5947 381.7382 0 0]
-    }
-    midPoint		    [2055.5928 381.7382]
-    chart		    132
-    dataLimits		    [1992.591 2126.595 379.338 384.138]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    262
-    linkNode		    [141 173 175]
-  }
-  transition {
-    id			    175
-    labelString		    "[hasChanged(RPM) && clk_count >= time_interval]"
-    labelPosition	    [2241.956 253.34 273.234 16]
-    fontSize		    12
-    src {
-      id		      149
-      intersection	      [2 1 0 0.5 2323.0947 381.7382 0 0]
-    }
-    dst {
-      id		      150
-      intersection	      [4 -1 0 0.4245 2457.0985 381.7382 0 0]
-    }
-    midPoint		    [2386.0966 381.7382]
-    chart		    132
-    dataLimits		    [2323.095 2457.098 379.338 384.138]
-    subviewer		    132
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    267
-    linkNode		    [141 174 0]
+    linkNode		    [141 0 0]
   }
   data {
-    id			    176
+    id			    163
     ssIdNumber		    273
     name		    "clk_count"
     scope		    LOCAL_DATA
@@ -10180,10 +9934,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [143 0 177]
+    linkNode		    [143 0 164]
   }
   data {
-    id			    177
+    id			    164
     ssIdNumber		    274
     name		    "deviation_prev"
     scope		    LOCAL_DATA
@@ -10199,49 +9953,49 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [143 176 0]
+    linkNode		    [143 163 0]
   }
   transition {
-    id			    178
+    id			    165
     labelString		    ""
-    labelPosition	    [663.624 550.129 0 0]
+    labelPosition	    [659.428 539.224 0 0]
     fontSize		    12
     src {
-      intersection	      [0 -0 1 0 663.6239 535.1288 0 0]
+      intersection	      [0 -0 1 0 659.4278 524.2236 0 0]
     }
     dst {
       id		      142
-      intersection	      [1 0 -1 0.4662 663.6239 565.1288 0 0]
+      intersection	      [1 0 -1 0.4662 659.4278 554.2236 0 0]
     }
-    midPoint		    [663.6239 550.1288]
+    midPoint		    [659.4278 539.2236]
     chart		    132
     visible		    0
-    dataLimits		    [661.224 666.024 535.129 565.129]
+    dataLimits		    [657.028 661.828 524.224 554.224]
     subviewer		    132
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    271
-    linkNode		    [143 0 179]
+    linkNode		    [143 0 166]
   }
   transition {
-    id			    179
+    id			    166
     labelString		    "[hasChanged(RPM) && clk_count >= time_interval]/{\ndeviation_dt = 1e5*(deviation - deviation_pre"
     "v)/clk_count;\n}"
-    labelPosition	    [809.409 599.51 306.938 44]
+    labelPosition	    [800.409 588.11 306.938 44]
     fontSize		    12
     src {
       id		      142
-      intersection	      [2 1 0 0.2279 751.009 591.3748 0 0]
+      intersection	      [2 1 0 0.2279 742.009 580.2417 0 0]
     }
     dst {
       id		      142
-      intersection	      [2 1 0 0.7289 751.009 649.0546 0 0]
+      intersection	      [2 1 0 0.7289 742.009 637.4205 0 0]
     }
-    midPoint		    [799.009 620.2147]
+    midPoint		    [790.009 608.8311]
     chart		    132
-    dataLimits		    [751.009 799.131 591.375 651.455]
+    dataLimits		    [742.009 790.131 580.242 639.821]
     subviewer		    132
     drawStyle		    SMART
     slide {
@@ -10250,10 +10004,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    272
-    linkNode		    [143 178 0]
+    linkNode		    [143 165 0]
   }
   data {
-    id			    180
+    id			    167
     ssIdNumber		    1
     name		    "RPM"
     scope		    INPUT_DATA
@@ -10274,10 +10028,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [132 0 181]
+    linkNode		    [132 0 168]
   }
   data {
-    id			    181
+    id			    168
     ssIdNumber		    2
     name		    "TargetRPM"
     scope		    INPUT_DATA
@@ -10298,10 +10052,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [132 180 182]
+    linkNode		    [132 167 169]
   }
   data {
-    id			    182
+    id			    169
     ssIdNumber		    3
     name		    "Throttle"
     scope		    OUTPUT_DATA
@@ -10323,10 +10077,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 181 183]
+    linkNode		    [132 168 170]
   }
   data {
-    id			    183
+    id			    170
     ssIdNumber		    101
     name		    "threshhold"
     scope		    LOCAL_DATA
@@ -10342,10 +10096,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 182 184]
+    linkNode		    [132 169 171]
   }
   data {
-    id			    184
+    id			    171
     ssIdNumber		    66
     name		    "deviation"
     scope		    OUTPUT_DATA
@@ -10362,10 +10116,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 183 185]
+    linkNode		    [132 170 172]
   }
   data {
-    id			    185
+    id			    172
     ssIdNumber		    232
     name		    "deviation_int"
     scope		    OUTPUT_DATA
@@ -10382,10 +10136,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 184 186]
+    linkNode		    [132 171 173]
   }
   data {
-    id			    186
+    id			    173
     ssIdNumber		    231
     name		    "deviation_dt"
     scope		    OUTPUT_DATA
@@ -10402,10 +10156,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 185 187]
+    linkNode		    [132 172 174]
   }
   data {
-    id			    187
+    id			    174
     ssIdNumber		    276
     name		    "feedback"
     scope		    OUTPUT_DATA
@@ -10422,10 +10176,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 186 188]
+    linkNode		    [132 173 175]
   }
   data {
-    id			    188
+    id			    175
     ssIdNumber		    233
     name		    "K_p"
     scope		    INPUT_DATA
@@ -10442,10 +10196,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 187 189]
+    linkNode		    [132 174 176]
   }
   data {
-    id			    189
+    id			    176
     ssIdNumber		    234
     name		    "K_i"
     scope		    INPUT_DATA
@@ -10462,10 +10216,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 188 190]
+    linkNode		    [132 175 177]
   }
   data {
-    id			    190
+    id			    177
     ssIdNumber		    235
     name		    "K_d"
     scope		    INPUT_DATA
@@ -10482,10 +10236,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 189 191]
+    linkNode		    [132 176 178]
   }
   data {
-    id			    191
+    id			    178
     ssIdNumber		    217
     name		    "delta_throttle"
     scope		    OUTPUT_DATA
@@ -10502,10 +10256,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [132 190 0]
+    linkNode		    [132 177 0]
   }
   event {
-    id			    192
+    id			    179
     ssIdNumber		    15
     name		    "clk"
     scope		    INPUT_EVENT
@@ -10514,13 +10268,13 @@ Stateflow {
     linkNode		    [132 0 0]
   }
   instance {
-    id			    193
+    id			    180
     machine		    1
     name		    "Throttle Control"
     chart		    132
   }
   target {
-    id			    194
+    id			    181
     machine		    1
     name		    "sfun"
     codeFlags		    ""
